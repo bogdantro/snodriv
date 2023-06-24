@@ -1,0 +1,26 @@
+$black: #1F1F1F;
+$white: rgb(246,246,246);
+$primBtn: #06c484;
+$txt: #183b56;
+ 
+.actions{
+    padding-top: 15px;
+    padding-inline: 18px;
+    text-align: center;
+    button{
+        padding: 6px 14px;
+        margin: 6px 3px;
+        color: $black;
+        background: rgba(235, 235, 235, 0.75);
+        border-radius: 20px;
+        border: 1px solid transparent;
+        outline: none;
+        transition: .2s;
+        &:active, &:focus{
+            background: rgba(215, 215, 215, 1);
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.actions {
+  padding-top: 15px;
+  padding-inline: 18px;
+  text-align: center;
+}
+.actions button {
+  padding: 6px 14px;
+  margin: 6px 3px;
+  color: #1F1F1F;
+  background: rgba(235, 235, 235, 0.75);
+  border-radius: 20px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: 0.2s;
+}
+.actions button:active, .actions button:focus {
+  background: rgb(215, 215, 215);
+}
+.actions button:first-child {
+  margin-left: 0;
+}/*# sourceMappingURL=base.css.map */
