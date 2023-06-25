@@ -10,17 +10,20 @@
 <div class="myaccount">
     <div class="account-card">
         <div class="flex">
-            <div class="your-info">
+            <!-- <div class="your-info">
                 <div class="memoji">
                     <i onclick="window.location.href='/logg-ut'" class="fa-solid fa-right-from-bracket" title="Logg ut"></i>
                     <img class="logo1" src="{% static '/images/other/memoji-male.png' %}" alt="user icon avatar myaccount">
                 </div>
                 <p class="small-paragraph">Velkommen</p>
                 <p class="small-paragraph" style="font-weight: 800;">{{ request.user.get_full_name }}</p>
-            </div>
+            </div> -->
 
             <br>
             <br>
+
+            <a id="logOut" href="{% url 'logout' %}">Logg ut</a>
+
         </div>
     </div>
 </div>

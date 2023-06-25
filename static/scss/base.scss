@@ -8,6 +8,61 @@ $txt: #183b56;
     padding-inline: 18px;
     text-align: center;
     background: rgba(255,255,255,0.8);
+    .sidebar{
+        background: white;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        position: absolute;
+        top: 60px;
+        left: -120px;
+        z-index: 10000;
+        box-shadow:  0 0 2px $white;
+        text-align: left;
+        opacity: 0;
+        pointer-events: none;
+        transition: .2s;
+        i{
+            position: absolute;
+            right: 45px;
+            color: $txt;
+            font-size: 24px;
+            top: 28px;
+            padding: 9px 13px;
+            margin: -9px -13px;
+            background: rgb(235,235,235);
+            border-radius: 100%;
+        }
+        .heading{
+            font-size: 20px;
+            color: $txt;
+            font-weight: 500;
+            padding-left: 30px;
+            padding-top: 25px;
+            padding-bottom: 20px;
+        }
+        a{
+            display: block;
+            width: 100%;
+            color: $txt;
+            font-size: 16px;
+            padding-block: 15px;
+            border-bottom: 1px solid rgba(100,100,100,0.15);
+            padding-inline: 30px;
+            padding-left: 38px;
+            &:hover{
+                background: $white;
+            }
+            &:nth-child(3){
+                border-top: 1px solid rgba(100,100,100,0.15);
+            }
+        }
+        &.active{
+            left: 0;
+            opacity: 1;
+            pointer-events: visible;
+        }
+    }
     button{
         padding: 6px 18px;
         margin: 8px 4px;
@@ -27,14 +82,20 @@ $txt: #183b56;
     }
 }
 
-.hall-of-fame{
+.results-section{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 12px;
     background: rgba(255,255,255,0.5);
+    display: none;
    .heading{
     color: $txt;
     font-size: 27px;
+   }
+   h2{
+    font-size: 18px;
+    color: $txt;
+    margin-right: 6px
    }
    .results{
     margin-top: 30px;
@@ -93,5 +154,8 @@ $txt: #183b56;
             text-align: center;
         }
     }
+   }
+   &.active{
+    display: block;
    }
 }

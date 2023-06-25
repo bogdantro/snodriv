@@ -6,27 +6,120 @@
 <link rel="stylesheet" href="{% static '/scss/global/global.css' %}" type="text/css">
 <script src="{% static '/js/home.js' %}"></script>
 
-<div class="actions">
-  <button onclick="hallOfFame()" id="hallOfFameBtn">Hall of Fame</button>
-  <button onclick="competition()" id="competitionBtn">Competition</button>
-  <button onclick="history()" id="historyBtn">History</button>
-  <button onclick="window.location.href='/min-bruker/'">Min bruker</button>
-</div>
 
-<div class="hall-of-fame" id="hallOfFameSec">
-  <h1 class="heading">Hall of Fame</h1>
-  <div class="results">
-    <div class="user">
-      <div class="place">1st</div>
-      <div class="img"><img src="{% static 'images/other/user1.jpg' %}" alt=""></div>
-      <div class="name">Bogdan Trohanel</div>
-      <div class="points">42p</div>
+<div class="page">
+  <div class="actions">
+
+    <button onclick="hallOfFame()" id="hallOfFameBtn">Hall of Fame</button>
+    <div class="sidebar" id="hallOfFameChoices">
+      <h1 class="heading">Hall of Fame</h1> <i onclick="hallOfFameClose()" class="fa-solid fa-xmark"></i>
+      <a onclick="hallOfFameDay()">Dag</a>
+      <a onclick="hallOfFameWeek()">Uke</a>
+      <a onclick="hallOfFameMonth()">Måned</a>
+      <a onclick="hallOfFameYear()">År</a>
+      <a onclick="hallOfFameAllTime()">All time</a>
     </div>
-    <div class="user">
-      <div class="place">2nd</div>
-      <div class="img"><img src="{% static 'images/other/user2.jpg' %}" alt=""></div>
-      <div class="name">Josh Joshua</div>
-      <div class="points">23p</div>
+
+    <button onclick="competition()" id="competitionBtn">Competition</button>
+
+    <button onclick="history()" id="historyBtn">History</button>
+
+    <button onclick="window.location.href='/min-bruker/'">Min bruker</button>
+    
+  </div>
+
+  <div class="results-section" id="hallOfFameDaySec">
+    <h1 class="heading">Hall of Fame</h1>
+    <h2>Dag</h2>
+    <div class="results">
+      <div class="user">
+        <div class="place">1st</div>
+        <div class="img"><img src="{% static 'images/other/user1.jpg' %}" alt=""></div>
+        <div class="name">Bogdan Trohanel</div>
+        <div class="points">42p</div>
+      </div>
+      <div class="user">
+        <div class="place">2nd</div>
+        <div class="img"><img src="{% static 'images/other/user2.jpg' %}" alt=""></div>
+        <div class="name">Josh Joshua</div>
+        <div class="points">23p</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-section" id="hallOfFameWeekSec">
+    <h1 class="heading">Hall of Fame</h1>
+    <h2>Uke</h2>
+    <div class="results">
+      <div class="user">
+        <div class="place">1st</div>
+        <div class="img"><img src="{% static 'images/other/user1.jpg' %}" alt=""></div>
+        <div class="name">Bogdan Trohanel</div>
+        <div class="points">42p</div>
+      </div>
+      <div class="user">
+        <div class="place">2nd</div>
+        <div class="img"><img src="{% static 'images/other/user2.jpg' %}" alt=""></div>
+        <div class="name">Josh Joshua</div>
+        <div class="points">23p</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-section" id="hallOfFameMonthSec">
+    <h1 class="heading">Hall of Fame</h1>
+    <h2>Måned</h2>
+    <div class="results">
+      <div class="user">
+        <div class="place">1st</div>
+        <div class="img"><img src="{% static 'images/other/user1.jpg' %}" alt=""></div>
+        <div class="name">Bogdan Trohanel</div>
+        <div class="points">42p</div>
+      </div>
+      <div class="user">
+        <div class="place">2nd</div>
+        <div class="img"><img src="{% static 'images/other/user2.jpg' %}" alt=""></div>
+        <div class="name">Josh Joshua</div>
+        <div class="points">23p</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-section" id="hallOfFameYearSec">
+    <h1 class="heading">Hall of Fame</h1>
+    <h2>År</h2>
+    <div class="results">
+      <div class="user">
+        <div class="place">1st</div>
+        <div class="img"><img src="{% static 'images/other/user1.jpg' %}" alt=""></div>
+        <div class="name">Bogdan Trohanel</div>
+        <div class="points">42p</div>
+      </div>
+      <div class="user">
+        <div class="place">2nd</div>
+        <div class="img"><img src="{% static 'images/other/user2.jpg' %}" alt=""></div>
+        <div class="name">Josh Joshua</div>
+        <div class="points">23p</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-section" id="hallOfFameAllTimeSec">
+    <h1 class="heading">Hall of Fame</h1>
+    <h2>All time</h2>
+    <div class="results">
+      <div class="user">
+        <div class="place">1st</div>
+        <div class="img"><img src="{% static 'images/other/user1.jpg' %}" alt=""></div>
+        <div class="name">Bogdan Trohanel</div>
+        <div class="points">42p</div>
+      </div>
+      <div class="user">
+        <div class="place">2nd</div>
+        <div class="img"><img src="{% static 'images/other/user2.jpg' %}" alt=""></div>
+        <div class="name">Josh Joshua</div>
+        <div class="points">23p</div>
+      </div>
     </div>
   </div>
 </div>

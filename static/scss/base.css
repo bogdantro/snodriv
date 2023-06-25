@@ -4,6 +4,61 @@
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
 }
+.actions .sidebar {
+  background: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+  top: 60px;
+  left: -120px;
+  z-index: 10000;
+  box-shadow: 0 0 2px rgb(246, 246, 246);
+  text-align: left;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.actions .sidebar i {
+  position: absolute;
+  right: 45px;
+  color: #183b56;
+  font-size: 24px;
+  top: 28px;
+  padding: 9px 13px;
+  margin: -9px -13px;
+  background: rgb(235, 235, 235);
+  border-radius: 100%;
+}
+.actions .sidebar .heading {
+  font-size: 20px;
+  color: #183b56;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.actions .sidebar a {
+  display: block;
+  width: 100%;
+  color: #183b56;
+  font-size: 16px;
+  padding-block: 15px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.15);
+  padding-inline: 30px;
+  padding-left: 38px;
+}
+.actions .sidebar a:hover {
+  background: rgb(246, 246, 246);
+}
+.actions .sidebar a:nth-child(3) {
+  border-top: 1px solid rgba(100, 100, 100, 0.15);
+}
+.actions .sidebar.active {
+  left: 0;
+  opacity: 1;
+  pointer-events: visible;
+}
 .actions button {
   padding: 6px 18px;
   margin: 8px 4px;
@@ -22,20 +77,26 @@
   margin-left: 0;
 }
 
-.hall-of-fame {
+.results-section {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 12px;
   background: rgba(255, 255, 255, 0.5);
+  display: none;
 }
-.hall-of-fame .heading {
+.results-section .heading {
   color: #183b56;
   font-size: 27px;
 }
-.hall-of-fame .results {
+.results-section h2 {
+  font-size: 18px;
+  color: #183b56;
+  margin-right: 6px;
+}
+.results-section .results {
   margin-top: 30px;
 }
-.hall-of-fame .results .user {
+.results-section .results .user {
   background: white;
   width: 95%;
   padding: 10px;
@@ -50,44 +111,47 @@
   height: 105px;
   border-radius: 4px;
 }
-.hall-of-fame .results .user:first-child {
+.results-section .results .user:first-child {
   margin-top: 0;
 }
-.hall-of-fame .results .user:last-child {
+.results-section .results .user:last-child {
   margin-bottom: 0;
 }
-.hall-of-fame .results .user .place {
+.results-section .results .user .place {
   font-size: 22px;
   color: #183b56;
   font-weight: 700;
   padding-inline: 17px;
   padding-left: 13px;
 }
-.hall-of-fame .results .user .img {
+.results-section .results .user .img {
   border-radius: 100%;
   width: 58px;
   height: 58px;
   overflow: hidden;
   position: relative;
 }
-.hall-of-fame .results .user .img img {
+.results-section .results .user .img img {
   width: 58px;
   height: 58px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.hall-of-fame .results .user .name {
+.results-section .results .user .name {
   width: 170px;
   font-size: 18px;
   font-weight: 500;
   text-align: left;
   margin-left: 18px;
 }
-.hall-of-fame .results .user .points {
+.results-section .results .user .points {
   margin-left: auto;
   padding-right: 5px;
   color: #183b56;
   font-size: 19px;
   font-weight: 600;
   text-align: center;
+}
+.results-section.active {
+  display: block;
 }/*# sourceMappingURL=base.css.map */
