@@ -1,0 +1,75 @@
+$black: #1F1F1F;
+$white: rgb(246,246,246);
+$primBtn: #08A1CF;
+$txt: #183b56;
+
+
+.login{
+    padding-top: 25px;
+    #loginForm{
+        width: auto;
+        height: auto;
+        .text{
+            text-align: center;
+            .heading{
+                color: $txt;
+                font-weight: 600;
+                font-size: 33px;
+            }
+        }
+        .inputs-labels{
+            padding-inline: 20px;
+            max-width: 400px;
+            padding-block: 28px;
+            label{
+                color: $txt;
+                font-size: 17px;
+                font-weight: 500;
+            }
+            input{
+                width: 100%;
+                height: 45px;
+                border: 1px solid lightgray;
+                outline: none;
+                padding: 8px;
+                color: $txt;
+                font-size: 16px;
+                cursor: pointer;
+                background: transparent;
+                border-radius: 4px;
+                &:hover{
+                    background: #354d5713;
+                }
+                &:focus, &:active{
+                    border: 3px solid #0f3546b0;
+                    cursor: text;
+                    background: transparent;
+                }
+                &::placeholder{
+                    color: #183B56;
+                    opacity: 0.6;
+                }
+            }
+        }
+        .form-actions{
+            padding-inline: 20px;
+            max-width: 400px;
+            button{
+                width: 100%;
+                height: 52px;
+                background: $primBtn;
+                color: $white;
+                border-radius: 4px;
+                font-size: 16px;
+                padding: 3px;
+                cursor: pointer;
+                transition: .4s;
+                border: none;
+                outline: none;
+                &:hover{
+                    transform: scale(1.01);
+                }
+            }
+        }
+    }
+}

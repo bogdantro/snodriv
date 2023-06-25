@@ -1,0 +1,73 @@
+.login {
+  padding-top: 25px;
+}
+.login #loginForm {
+  width: auto;
+  height: auto;
+}
+.login #loginForm .text {
+  text-align: center;
+}
+.login #loginForm .text .heading {
+  color: #183b56;
+  font-weight: 600;
+  font-size: 33px;
+}
+.login #loginForm .inputs-labels {
+  padding-inline: 20px;
+  max-width: 400px;
+  padding-block: 28px;
+}
+.login #loginForm .inputs-labels label {
+  color: #183b56;
+  font-size: 17px;
+  font-weight: 500;
+}
+.login #loginForm .inputs-labels input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid lightgray;
+  outline: none;
+  padding: 8px;
+  color: #183b56;
+  font-size: 16px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 4px;
+}
+.login #loginForm .inputs-labels input:hover {
+  background: rgba(53, 77, 87, 0.0745098039);
+}
+.login #loginForm .inputs-labels input:focus, .login #loginForm .inputs-labels input:active {
+  border: 3px solid rgba(15, 53, 70, 0.6901960784);
+  cursor: text;
+  background: transparent;
+}
+.login #loginForm .inputs-labels input::-moz-placeholder {
+  color: #183B56;
+  opacity: 0.6;
+}
+.login #loginForm .inputs-labels input::placeholder {
+  color: #183B56;
+  opacity: 0.6;
+}
+.login #loginForm .form-actions {
+  padding-inline: 20px;
+  max-width: 400px;
+}
+.login #loginForm .form-actions button {
+  width: 100%;
+  height: 52px;
+  background: #08A1CF;
+  color: rgb(246, 246, 246);
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 3px;
+  cursor: pointer;
+  transition: 0.4s;
+  border: none;
+  outline: none;
+}
+.login #loginForm .form-actions button:hover {
+  transform: scale(1.01);
+}/*# sourceMappingURL=login.css.map */

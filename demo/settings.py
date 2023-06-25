@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 SESSION_COOKIE_AGE = 86400
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
-LOGIN_URL = '/login/'
+LOGIN_URL = '/logg-inn/'
 CRISPY_TEMPLATE_PACK = 'uni_form'
 
 INSTALLED_APPS = [
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.core',
+    'apps.userprofile',
 ]
 
 MIDDLEWARE = [

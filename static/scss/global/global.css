@@ -11,4 +11,7 @@ html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   margin: auto;
+  height: 100%;
+  width: 100%;
+  background: url("/static/images/covers/bg-img.png") 50% 0 no-repeat fixed;
 }/*# sourceMappingURL=global.css.map */

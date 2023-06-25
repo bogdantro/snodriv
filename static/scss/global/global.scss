@@ -2,7 +2,7 @@
 
 $black: #1F1F1F;
 $white: rgb(246,246,246);
-$primBtn: #06c484;
+$primBtn: #08A1CF;
 $txt: #183b56;
 
 *{
@@ -16,4 +16,7 @@ $txt: #183b56;
     overflow-x: hidden;
     scroll-behavior: smooth;
     margin: auto;
+    height: 100%;
+    width: 100%;
+    background: url("/static/images/covers/bg-img.png") 50% 0 no-repeat fixed;
   }

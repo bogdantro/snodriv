@@ -1,0 +1,86 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static '/scss/userprofile/myaccount.css' %}" type="text/css">
+<script rel="stylesheet" src="{% static '/js/myaccount.js' %}" type="text/javascript"></script>
+<link rel="stylesheet" href="{% static '/scss/pages/page.css' %}" type="text/css">
+
+
+<div class="myaccount">
+    <div class="account-card">
+        <div class="flex">
+            <div class="your-info">
+                <div class="memoji">
+                    <i onclick="window.location.href='/logg-ut'" class="fa-solid fa-right-from-bracket" title="Logg ut"></i>
+                    <img class="logo1" src="{% static '/images/other/memoji-male.png' %}" alt="user icon avatar myaccount">
+                </div>
+                <p class="small-paragraph">Velkommen</p>
+                <p class="small-paragraph" style="font-weight: 800;">{{ request.user.get_full_name }}</p>
+            </div>
+
+            <br>
+            <br>
+            
+            <div class="orders">
+                <h1 id="myOrdersHeadingp" class="my-orders-headingp" onclick="showOrders()">Mine Bestillinger<i style="margin-left: 10px;" class="fa-solid fa-angle-down"></i></h1>
+                <div class="my-orders" id="myOrders">
+                    <div class="check-type-of-order-flex">
+                        <p id="startedOrdersP" onclick="startedOrders()">I gang</p>
+                        <p id="completedOrdersP" onclick="completedOrders()">Fullførte</p>
+                    </div>  
+                        <div class="if-order-finished hide" id="ifOrderFinished">
+                            {% for order in request.user.orders.all %}  
+                            {% if order.is_finished %}  
+                            <div class="you-got-orders" onclick="window.location.href='{% url 'orderinfo' order.id %}'">
+                                <div class="order-row-one">
+                                    <h1 class="order-product">{{order.short_name}}</h1><p class="product-tag">{{order.tag}}</p>
+                                    <p class="order-price">{{ order.product_price | floatformat }}kr</p>
+                                </div>
+                                <div class="order-row-two">
+                                    <div class="row-one">
+                                        <p class="smalltext">Navn</p>
+                                        <h1>{{order.name}}</h1>
+                                    </div>
+                                    <div class="row-two">
+                                        <p class="smalltext">Bestillt</p>
+                                        <h1>{{order.created_at | date:"d F Y"}}</h1>
+                                    </div>
+                                </div>
+                            </div> 
+                                {% if order.is_notconfirmed %}
+                                    <p class="no-finished no-line">Du har ingen fullførte bestillinger enda...</p>
+                                {% endif %}
+                            {% endif %}
+                            {% empty %}
+                                <p class="no-finished no-line">Du har ingen fullførte bestillinger enda...</p>
+                            {% endfor %}
+                        </div>
+                        <div class="if-order-started" id="ifOrderStarted">
+                            {% for order in request.user.orders.all %}  
+                                {% if order.is_confirmed %}
+                                <div class="you-got-orders" onclick="window.location.href='{% url 'orderinfo' order.id %}'">
+                                    <div class="order-row-one">
+                                        <h1 class="order-product">{{order.short_name}}</h1><p class="product-tag">{{order.tag}}</p>
+                                        <p class="order-price">{{ order.product_price | floatformat }}kr</p>
+                                    </div>
+                                    <div class="order-row-two">
+                                        <div class="row-one">
+                                            <p class="smalltext">Navn</p>
+                                            <h1>{{order.name}}</h1>
+                                        </div>
+                                        <div class="row-two">
+                                            <p class="smalltext">Bestillt</p>
+                                            <h1>{{order.created_at | date:"d F Y"}}</h1>
+                                        </div>
+                                    </div>
+                                </div>   
+                                {% endif %} 
+                                {% endfor %} 
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -7,10 +7,28 @@
 <script src="{% static '/js/home.js' %}"></script>
 
 <div class="actions">
-  <button>Dag</button>
-  <button>Uke</button>
-  <button>Måned</button>
-  <button>All time</button>
+  <button onclick="hallOfFame()" id="hallOfFameBtn">Hall of Fame</button>
+  <button onclick="competition()" id="competitionBtn">Competition</button>
+  <button onclick="history()" id="historyBtn">History</button>
+  <button>Min bruker</button>
+</div>
+
+<div class="hall-of-fame" id="hallOfFameSec">
+  <h1 class="heading">Hall of Fame</h1>
+  <div class="results">
+    <div class="user">
+      <div class="place">1st</div>
+      <div class="img"><img src="{% static 'images/other/user1.jpg' %}" alt=""></div>
+      <div class="name">Bogdan Trohanel</div>
+      <div class="points">42p</div>
+    </div>
+    <div class="user">
+      <div class="place">2nd</div>
+      <div class="img"><img src="{% static 'images/other/user2.jpg' %}" alt=""></div>
+      <div class="name">Josh Joshua</div>
+      <div class="points">23p</div>
+    </div>
+  </div>
 </div>
 {% endblock %}
  

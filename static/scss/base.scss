@@ -1,26 +1,97 @@
 $black: #1F1F1F;
 $white: rgb(246,246,246);
-$primBtn: #06c484;
+$primBtn: #08A1CF;
 $txt: #183b56;
  
 .actions{
-    padding-top: 15px;
+    padding-block: 12px;
     padding-inline: 18px;
     text-align: center;
+    background: rgba(255,255,255,0.8);
     button{
-        padding: 6px 14px;
-        margin: 6px 3px;
-        color: $black;
-        background: rgba(235, 235, 235, 0.75);
+        padding: 6px 18px;
+        margin: 8px 4px;
+        color: $txt;
+        background: rgba(232, 232, 232, 0.75);
         border-radius: 20px;
         border: 1px solid transparent;
         outline: none;
         transition: .2s;
-        &:active, &:focus{
+        &.active{
             background: rgba(215, 215, 215, 1);
+            transform: scale(1.01);
         }
         &:first-child{
             margin-left: 0;
         }
     }
+}
+
+.hall-of-fame{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    background: rgba(255,255,255,0.5);
+   .heading{
+    color: $txt;
+    font-size: 27px;
+   }
+   .results{
+    margin-top: 30px;
+    .user{
+        background: white;
+        width: 95%;
+        padding: 10px;
+        padding-left: 2px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid rgb(230,230,230);
+        margin-block: 12px;
+        display: flex;
+        align-items: center;
+        height: 105px;
+        border-radius: 4px;
+        &:first-child{
+            margin-top: 0;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .place{
+            font-size: 22px;
+            color: $txt;
+            font-weight: 700;
+            padding-inline: 17px;
+            padding-left: 13px;
+        }
+        .img{
+            border-radius: 100%;
+            width: 58px;
+            height: 58px;
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 58px;
+                height: 58px;
+                object-fit: cover;
+            }
+        }
+        .name{
+            width: 170px;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: left;
+            margin-left: 18px;
+        }
+        .points{
+            margin-left: auto;
+            padding-right: 5px;
+            color: $txt;
+            font-size: 19px;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+   }
 }

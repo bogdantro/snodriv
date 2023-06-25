@@ -1,0 +1,325 @@
+body, html {
+  background-color: #e5e8e7;
+  background-image: url('/static/images/background-login/Bakgrunninlogging.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 500px;
+}
+
+.signup-page-block {
+  width: 1000px; /* adjust 2px to match the gap above */
+  height: 600px; /* adjust as needed */
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px px 0px 0px rgba(0,0,0,0.2);
+}
+
+
+#signupLink {
+  color: #F4C726 !important;
+  border-bottom: 1px solid rgba(244, 199, 38, 0.7058823529);
+}
+
+.signup {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+.signup .text {
+  text-align: center;
+}
+.signup .text .paragraph {
+  width: 460px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 3px;
+}
+.signup .text .heading {
+  color: #183B56;
+  font-weight: bold;
+  font-size: 33px;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+}
+.signup #signUpForm {
+  width: 100%;
+  height: 100%;
+}
+.signup #signUpForm .inputs input {
+  width: 450px;
+  height: 65px;
+  margin-block: 25px;
+  border: none;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #183B56;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  background: transparent;
+}
+.signup #signUpForm .inputs input:hover {
+  background: rgba(53, 77, 87, 0.0745098039);
+}
+.signup #signUpForm .inputs input:focus, .signup #signUpForm .inputs input:active {
+  border: 3px solid rgba(53, 77, 87, 0.8078431373);
+  cursor: text;
+  background: transparent;
+}
+.signup #signUpForm .inputs input::-moz-placeholder {
+  color: #183B56;
+  opacity: 0.6;
+}
+.signup #signUpForm .inputs input::placeholder {
+  color: #183B56;
+  opacity: 0.6;
+}
+.signup #signUpForm .inputs input#organization {
+  width: 80%;
+  margin-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+}
+
+.signup #signUpForm .inputs input#orgname {
+  width: 80%;
+  margin-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+}
+
+
+.signup #signUpForm .inputs input#first_name {
+  margin-right: 25px;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+}
+.signup #signUpForm .inputs input#last_name {
+  margin-left: 25px;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+}
+.signup #signUpForm .inputs input#email {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+}
+.signup #signUpForm .inputs input#password1 {
+  margin-right: 25px;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+}
+.signup #signUpForm .inputs input#password2 {
+  margin-left: 25px;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+}
+.signup #signUpForm .form-actions {
+  margin-top: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup #signUpForm .form-actions {
+  margin-top: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup #signUpForm .form-actions .button-style {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  background: #354D57;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 3px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: transform 0.4s, color 0.4s;
+  display:flex;
+}
+
+.signup #signUpForm .form-actions .button-style:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transition: 0s;
+}
+
+.signup #signUpForm .form-actions .button-style:hover:before {
+  left: 100%;
+  transition: 1s;
+}
+
+.signup #signUpForm .form-actions .button-style:hover {
+  transform: scale(1.05);
+}
+
+.signup #signUpForm .form-actions .button-style:hover .arrow {
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.signup #signUpForm .form-actions .button-style .arrow {
+  position: relative;
+  opacity: 0;
+  margin-left: 10px;
+}
+
+.signup #signUpForm .form-actions .button-style span,
+.signup #signUpForm .form-actions .button-style .arrow {
+  transition: 0.4s;
+}
+
+span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+  width: 100%; /* span takes up the full width of the button */
+
+}
+
+.signup #signUpForm .login {
+  color: #183B56;
+  font-size: 16px;
+  text-decoration: underline;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.link {
+  color: black !important;
+  font-size: 16px;
+  text-decoration: underline;
+  opacity: 0.8;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+
+.link:hover {
+  color: #183B56 !important;
+  border: b;
+}
+
+h3{
+  color: black;
+  font-size: 16px;
+  font-family: "Monteserrat", sans-serif;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+.password-container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.firstname{
+  margin-right: auto;
+}
+
+.organization{
+  font-size: 20px;
+}
+
+.organization-container{
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.input-group .organization {
+  margin-left: 10%; /* adjust as per your needs */
+}
+
+.input-group #organization {
+  width: 80%;
+}
+
+.input-group #orgname {
+  width: 80%;
+}
+
+.org-text{
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: semi-bold;
+  color: black;
+}
+
+p{
+  color: black;
+  font-size: 16px;
+}

@@ -1,21 +1,93 @@
 .actions {
-  padding-top: 15px;
+  padding-block: 12px;
   padding-inline: 18px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.8);
 }
 .actions button {
-  padding: 6px 14px;
-  margin: 6px 3px;
-  color: #1F1F1F;
-  background: rgba(235, 235, 235, 0.75);
+  padding: 6px 18px;
+  margin: 8px 4px;
+  color: #183b56;
+  background: rgba(232, 232, 232, 0.75);
   border-radius: 20px;
   border: 1px solid transparent;
   outline: none;
   transition: 0.2s;
 }
-.actions button:active, .actions button:focus {
+.actions button.active {
   background: rgb(215, 215, 215);
+  transform: scale(1.01);
 }
 .actions button:first-child {
   margin-left: 0;
+}
+
+.hall-of-fame {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.hall-of-fame .heading {
+  color: #183b56;
+  font-size: 27px;
+}
+.hall-of-fame .results {
+  margin-top: 30px;
+}
+.hall-of-fame .results .user {
+  background: white;
+  width: 95%;
+  padding: 10px;
+  padding-left: 2px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgb(230, 230, 230);
+  margin-block: 12px;
+  display: flex;
+  align-items: center;
+  height: 105px;
+  border-radius: 4px;
+}
+.hall-of-fame .results .user:first-child {
+  margin-top: 0;
+}
+.hall-of-fame .results .user:last-child {
+  margin-bottom: 0;
+}
+.hall-of-fame .results .user .place {
+  font-size: 22px;
+  color: #183b56;
+  font-weight: 700;
+  padding-inline: 17px;
+  padding-left: 13px;
+}
+.hall-of-fame .results .user .img {
+  border-radius: 100%;
+  width: 58px;
+  height: 58px;
+  overflow: hidden;
+  position: relative;
+}
+.hall-of-fame .results .user .img img {
+  width: 58px;
+  height: 58px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hall-of-fame .results .user .name {
+  width: 170px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 18px;
+}
+.hall-of-fame .results .user .points {
+  margin-left: auto;
+  padding-right: 5px;
+  color: #183b56;
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
 }/*# sourceMappingURL=base.css.map */
