@@ -67,6 +67,7 @@
   transition: 0.4s;
   border: none;
   outline: none;
+  font-weight: 400;
 }
 .login #loginForm .form-actions button:hover {
   transform: scale(1.01);
