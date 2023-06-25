@@ -1,5 +1,8 @@
 function hallOfFame(){
     document.getElementById('hallOfFameChoices').classList.add('active');
+
+    document.getElementById('hideOne').style.display = 'none';
+    document.getElementById('hideTwo').style.display = 'none';
 }
 
 function hallOfFameDay(){

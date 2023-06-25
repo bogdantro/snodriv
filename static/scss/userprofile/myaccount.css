@@ -1,163 +1,91 @@
-#myaccountLink {
-  color: #F4C726 !important;
-  border-bottom: 1px solid rgba(244, 199, 38, 0.7058823529);
-}
-
-body, html {
-  overflow: hidden !important;
-}
-
 .myaccount {
-  background: white;
   width: 100%;
-  height: calc(100vh - 60px);
-  overflow-y: scroll;
-  overflow-x: hidden !important;
+  min-height: 88vh;
+  background: transparent;
+  margin-bottom: 0;
 }
-.myaccount::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-  background-color: rgba(250, 255, 179, 0.1);
-  padding-block: 10px;
+.myaccount .heading {
+  padding-block: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  color: #183b56;
+  font-size: 28px;
+  font-weight: 600;
 }
-.myaccount::-webkit-scrollbar {
-  height: 60px;
-  background-color: transparent;
-  padding-block: 10px;
-}
-.myaccount::-webkit-scrollbar-thumb {
-  padding-block: 10px;
-  border-radius: 4px;
-  background-color: #CEAF30;
+.myaccount .flex {
+  display: unset;
 }
 .myaccount .account-card {
-  padding-top: 55px;
-  padding-inline: 25px;
-}
-.myaccount .account-card .flex {
-  display: flex;
-  justify-content: space-between;
-}
-.myaccount .account-card .flex label {
-  color: #183B56;
-  font-size: 17px;
-  opacity: 0.9;
-  margin-bottom: 11px;
-}
-.myaccount .account-card .flex .your-info {
+  margin: 0 auto;
   text-align: left;
-  min-width: 380px;
-  max-width: 450px;
-  padding-inline: 10px;
-  margin-right: 20px;
-}
-.myaccount .account-card .flex .your-info input {
-  width: 100%;
-  padding: 5px 15px;
-  height: 50px;
-  background: rgba(40, 40, 40, 0.1);
-  border: none;
-  outline: none;
-  color: #183B56;
-  opacity: 0.8;
-  font-size: 16px;
-}
-.myaccount .account-card .flex .your-info .heading {
-  color: #183B56;
-  font-size: 26px;
-}
-.myaccount .account-card .flex .orders {
-  width: 100%;
-  padding-inline: 20px;
-  margin-left: 20px;
-}
-.myaccount .account-card .flex .orders .heading {
-  color: #183B56;
-  font-size: 26px;
-}
-.myaccount .account-card .flex .orders .you-got-orders {
-  padding-top: 27px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .labels {
-  width: 100%;
-  position: relative;
-}
-.myaccount .account-card .flex .orders .you-got-orders .labels label {
-  position: absolute;
-}
-.myaccount .account-card .flex .orders .you-got-orders .labels label.id {
-  left: 6px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .labels label.date {
-  left: 80px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .labels label.total {
-  left: 265px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .labels label.paid {
-  left: 380px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .labels label.details {
-  left: 500px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .order-info {
-  width: 100%;
-  height: 50px;
-  background: rgba(40, 40, 40, 0.1);
-  display: flex;
-  align-items: center;
-  padding: 8px 0px;
-  margin-top: 34px;
-  position: relative;
-}
-.myaccount .account-card .flex .orders .you-got-orders .order-info .id {
-  position: absolute;
-  left: 6px;
-  color: #183B56;
-  opacity: 0.8;
-  font-size: 16px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .order-info .date {
-  position: absolute;
-  left: 80px;
-  color: #183B56;
-  opacity: 0.8;
-  font-size: 16px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .order-info .total {
-  position: absolute;
-  left: 265px;
-  color: #183B56;
-  opacity: 0.8;
-  font-size: 16px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .order-info .paid {
-  position: absolute;
-  left: 380px;
-  color: #183B56;
-  opacity: 0.8;
-  font-size: 16px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .order-info .details {
-  position: absolute;
-  left: 500px;
-  color: #183B56;
-  opacity: 0.8;
-  font-size: 16px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .order-info .details button {
-  border: none;
-  outline: none;
-  width: 100px;
-  padding: 3px;
-  text-align: center;
-  font-size: 16px;
-  color: white;
-  background: black;
-  border-radius: 2px;
-}
-.myaccount .account-card .flex .orders .you-got-orders .order-info .details button:hover {
   background: transparent;
-  color: black;
-  transition: 0.2s;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 7px;
+}
+.myaccount .account-card .your-info {
+  display: inline-block;
+  margin-block: 12px;
+  margin-left: 0;
+  text-align: center;
+  background: white;
+  width: 100%;
+  height: auto;
+  max-width: 340px;
+  padding: 28px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.myaccount .account-card .your-info .memoji {
+  background: rgba(0, 137, 249, 0.5215686275);
+  border-radius: 100%;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: auto;
+  position: relative;
+}
+.myaccount .account-card .your-info .memoji img {
+  width: 85px;
+  height: auto;
+  padding: 15px;
+}
+.myaccount .account-card .your-info .memoji i {
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #183b56;
+  cursor: pointer;
+}
+.myaccount .account-card .your-info .text .welcome {
+  margin-bottom: 0;
+  font-size: 22px;
+  color: #183b56;
+  padding-block: 8px;
+}
+.myaccount .account-card .your-info .user-info {
+  text-align: left;
+}
+.myaccount .account-card .your-info .user-info label {
+  color: #183b56;
+  font-size: 17px;
+  font-weight: 500;
+}
+.myaccount .account-card .your-info .user-info input {
+  width: 100%;
+  height: 53px;
+  border: 1px solid lightgray;
+  outline: none;
+  padding: 8px;
+  color: #183b56;
+  font-size: 16px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  pointer-events: none;
 }/*# sourceMappingURL=myaccount.css.map */

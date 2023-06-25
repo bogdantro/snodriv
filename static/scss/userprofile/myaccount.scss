@@ -1,163 +1,99 @@
-#myaccountLink{
-    color: #F4C726 !important;
-    border-bottom: 1px solid #f4c726b4;
-}
-
-body, html{
-    overflow: hidden !important;
-}
+$black: #1F1F1F;
+$white: rgb(246,246,246);
+$primBtn: #08A1CF;
+$txt: #183b56;
 
 .myaccount{
-    background: white;
     width: 100%;
-    height: calc(100vh - 60px);
-    overflow-y: scroll;
-    overflow-x: hidden !important;
-    &::-webkit-scrollbar-track{
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        border-radius: 4px;
-        background-color: rgba(250, 255, 179, 0.1);
-        padding-block: 10px;
+    min-height: 88vh;
+    background: transparent;
+    margin-bottom: 0;
+    // ACCOUNT HEADING
+    .heading{
+        padding-block: 20px;
+        text-align: center;
+        background: rgba(255,255,255,0.8);
+        color: $txt;
+        font-size: 28px;
+        font-weight: 600;
+        }
+    .flex{
+      display: unset;
     }
-    &::-webkit-scrollbar{
-        height: 60px;
-        background-color: transparent;
-        padding-block: 10px;
-    }
-    &::-webkit-scrollbar-thumb{
-        padding-block: 10px;
-        border-radius: 4px;
-        background-color: #CEAF30;
-    }
+    // Account section
     .account-card{
-        padding-top: 55px;
-        padding-inline: 25px;
-        .flex{
-            display: flex;
-            justify-content: space-between;
+      margin: 0 auto;
+      text-align: left;
+      background: transparent;
+      width: 100%;
+      max-width: 900px;
+      padding: 20px;
+      border-radius: 7px;
+        // YOUR INFO
+        .your-info{
+          display: inline-block;
+          margin-block: 12px;
+          margin-left: 0;
+          text-align: center;
+          background: white;
+          width: 100%;
+          height: auto;
+          max-width: 340px;
+          padding: 28px;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          .memoji{
+            background: #0089f985;
+            border-radius: 100%;
+            width: max-content;
+            height: max-content;
+            margin: auto;
+            position: relative;
+            img{
+              width: 85px;
+              height: auto;
+              padding: 15px;
+            }
+            i{
+              position: absolute;
+              right: -45px;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 22px;
+              color: $txt;
+              cursor: pointer;
+            }
+          }
+          .text{
+            .welcome{
+                margin-bottom: 0;
+                font-size: 22px;
+                color: $txt;
+                padding-block: 8px;
+            }
+          }
+          .user-info{
+            text-align: left;
             label{
-                color: #183B56;
+                color: $txt;
                 font-size: 17px;
-                opacity: 0.9;
-                margin-bottom: 11px;
+                font-weight: 500;
             }
-            .your-info{
-                text-align: left;
-                min-width: 380px;
-                max-width: 450px;
-                padding-inline: 10px;
-                margin-right: 20px;
-                input{
-                    width: 100%;
-                    padding: 5px 15px;
-                    height: 50px;
-                    background: rgba(40,40,40,0.1);
-                    border: none;
-                    outline: none;
-                    color: #183B56;
-                    opacity: 0.8;
-                    font-size: 16px;
-                }
-                .heading{
-                    color: #183B56;
-                    font-size: 26px;
-                }
-            }
-            .orders{
+            input{
                 width: 100%;
-                padding-inline: 20px;
-                margin-left: 20px;
-                .heading{
-                    color: #183B56;
-                    font-size: 26px;
-                }
-                .you-got-orders{
-                    padding-top: 27px;
-                    .labels{
-                        width: 100%;
-                        position: relative;
-                        label{
-                            position: absolute;
-                            &.id{
-                                left: 6px;
-                            }
-                            &.date{
-                                left: 80px;
-                            }
-                            &.total{
-                                left: 265px;
-                            }
-                            &.paid{
-                                left: 380px;
-                            }
-                            &.details{
-                                left: 500px;
-                            }
-                        }
-                    }
-                    .order-info{
-                        width: 100%;
-                        height: 50px;
-                        background: rgba(40,40,40,0.1);
-                        display: flex;
-                        align-items: center;
-                        padding: 8px 0px;
-                        margin-top: 34px;
-                        position: relative;
-                        .id{
-                            position: absolute;
-                            left: 6px;
-                            color: #183B56;
-                            opacity: 0.8;
-                            font-size: 16px;
-                        }
-                        .date{
-                            position: absolute;
-                            left: 80px;
-                            color: #183B56;
-                            opacity: 0.8;
-                            font-size: 16px;
-                        }
-                        .total{
-                            position: absolute;
-                            left: 265px;
-                            color: #183B56;
-                            opacity: 0.8;
-                            font-size: 16px;
-                        }
-                        .paid{
-                            position: absolute;
-                            left: 380px;
-                            color: #183B56;
-                            opacity: 0.8;
-                            font-size: 16px;
-                        }
-                        .details{
-                            position: absolute;
-                            left: 500px;
-                            color: #183B56;
-                            opacity: 0.8;
-                            font-size: 16px;
-                            button{
-                                border: none;
-                                outline: none;
-                                width: 100px;
-                                padding: 3px;
-                                text-align: center;
-                                font-size: 16px;
-                                color: white;
-                                background: black;
-                                border-radius: 2px;
-                                &:hover{
-                                    background: transparent;
-                                    color: black;
-                                    transition: .2s;
-                                }
-                            }
-                        }
-                    }
-                }
+                height: 53px;
+                border: 1px solid lightgray;
+                outline: none;
+                padding: 8px;
+                color: $txt;
+                font-size: 16px;
+                cursor: pointer;
+                background: rgba(255,255,255,0.7);
+                border-radius: 4px;
+                pointer-events: none;
             }
+          }
         }
     }
 }

@@ -27,7 +27,7 @@ def signup(request, backend='django.contrib.auth.backends.ModelBackend'):
 
             login(request, user)
 
-            return redirect('hjemme')
+            return redirect('/min-bruker/')
     else:
         form = SignUpForm()
         userprofileform = UserprofileForm()
