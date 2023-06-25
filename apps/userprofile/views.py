@@ -9,12 +9,7 @@ from django.core.mail import send_mail, BadHeaderError
 @login_required
 def myaccount(request):
 
-    context = {
-        'orderFinished':orderFinished,
-        'orderConfirmed':orderConfirmed,
-     }
-
-    return render(request, 'core/myaccount.html', context)
+    return render(request, 'core/myaccount.html')
 
 
 
