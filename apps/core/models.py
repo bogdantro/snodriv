@@ -16,6 +16,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(blank=True, default='static/images/default.png', upload_to='other/user_images/')
     points = models.CharField(max_length=300, default=0)
+    active = models.BooleanField(default=True)
 
     def __str__(self):
         return f'{self.user.username} sin profil'

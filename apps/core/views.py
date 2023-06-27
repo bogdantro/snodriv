@@ -20,7 +20,7 @@ from .models import *
 # Home
 @login_required
 def home(request):      
-    profiles = Profile.objects.all()
+    profiles = Profile.objects.filter(active=True)
 
     context = {
         'profiles': profiles,
