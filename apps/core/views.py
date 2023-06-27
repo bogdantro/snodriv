@@ -14,12 +14,18 @@ from django.contrib.auth.decorators import *
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
+from .models import *
 
 
 # Home
 @login_required
 def home(request):      
-    return render(request, 'core/home.html')
+    profiles = Profile.objects.all()
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'core/home.html', context)
     
 
 

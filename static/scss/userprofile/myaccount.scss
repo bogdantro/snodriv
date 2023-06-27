@@ -43,17 +43,16 @@ $txt: #183b56;
           position: relative;
           left: 50%;
           transform: translateX(-50%);
-          .memoji{
-            background: #0089f985;
-            border-radius: 100%;
+          .user-profile{
             width: max-content;
             height: max-content;
             margin: auto;
             position: relative;
             img{
-              width: 85px;
-              height: auto;
-              padding: 15px;
+              width: 90px;
+              border-radius: 100%;
+              height: 95px;
+              object-fit: fill;
             }
             i{
               position: absolute;
@@ -64,17 +63,46 @@ $txt: #183b56;
               color: $txt;
               cursor: pointer;
             }
-          }
-          .text{
-            .welcome{
-                margin-bottom: 0;
-                font-size: 22px;
+            #changeProfilePic{
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              margin-block: 15px;
+              padding-block: 5px;
+              width:max-content;
+              max-width: 250px;
+              pointer-events: visible;
+              z-index: 100000;
+              label{
                 color: $txt;
-                padding-block: 8px;
+                font-size: 17px;
+                font-weight: 500;
+              }
+              input{
+                  width: 100%;
+                  height: 53px;
+                  outline: none;
+                  padding: 8px;
+                  color: $txt;
+                  font-size: 16px;
+                  cursor: pointer;
+                  border-radius: 4px;
+              }
+              button{
+                margin-top: 15px;
+                width: 100%;
+                height: 40px;
+                border: 1px solid transparent;
+                outline: none;
+                border-radius: 4px;
+                background: $primBtn;
+                color: $white;
+              }
             }
           }
           .user-info{
             text-align: left;
+            margin-top: 220px;
             label{
                 color: $txt;
                 font-size: 17px;
@@ -91,7 +119,16 @@ $txt: #183b56;
                 cursor: pointer;
                 background: rgba(255,255,255,0.7);
                 border-radius: 4px;
-                pointer-events: none;
+            }
+            button{
+              margin-top: 25px;
+              width: 100%;
+              height: 50px;
+              border: 1px solid transparent;
+              outline: none;
+              border-radius: 4px;
+              background: $primBtn;
+              color: $white;
             }
           }
         }

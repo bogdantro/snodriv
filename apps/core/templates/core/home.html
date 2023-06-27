@@ -36,18 +36,14 @@
     <h1 class="heading">Hall of Fame</h1>
     <h2>Dag</h2>
     <div class="results">
+      {% for profile in profiles %}
       <div class="user">
-        <div class="place">1st</div>
-        <div class="img"><img src="{% static 'images/other/user1.jpg' %}" alt=""></div>
-        <div class="name">Bogdan Trohanel</div>
-        <div class="points">42p</div>
+        <div class="place">**</div>
+        <div class="img"><img src="{{profile.image.url}}" alt=""></div>
+        <div class="name">{{profile.user.get_full_name}}</div>
+        <div class="points">{{profile.points}}p</div>
       </div>
-      <div class="user">
-        <div class="place">2nd</div>
-        <div class="img"><img src="{% static 'images/other/user2.jpg' %}" alt=""></div>
-        <div class="name">Josh Joshua</div>
-        <div class="points">23p</div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 

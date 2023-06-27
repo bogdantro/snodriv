@@ -4,12 +4,39 @@ from .forms import SignUpForm, UserprofileForm
 from django.contrib.auth import login
 from textwrap import dedent
 from django.core.mail import send_mail, BadHeaderError
+from .forms import *
 
 
 @login_required
 def myaccount(request):
+    if request.method == 'POST':
+        p_form =  ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile)
+        if p_form.is_valid():
+            image = p_form.cleaned_data['image']
+            
+            p_form.save()
 
-    return render(request, 'core/myaccount.html')
+        else:
+            p_form = ProfileUpdateForm() 
+
+
+    if request.method == 'POST':
+        u_form =  UserUpdateForm(request.POST, instance=request.user)
+        if u_form.is_valid():
+            username = u_form.cleaned_data['username']
+            email = u_form.cleaned_data['email']
+            first_name = u_form.cleaned_data['first_name']
+            last_name = u_form.cleaned_data['last_name']
+            
+            u_form.save()
+
+        else:
+            u_form = UserUpdateForm()    
+
+    context = {
+    }
+
+    return render(request, 'core/myaccount.html', context)
 
 
 

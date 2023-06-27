@@ -4,6 +4,8 @@ from django.contrib.auth.models import User
 
 from .models import Userprofile
 
+from apps.core.models import Profile
+
 
 class UserprofileForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
@@ -33,3 +35,15 @@ class SignUpForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']
+
+class UserUpdateForm(forms.ModelForm):
+    email = forms.EmailField()
+
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'first_name', 'last_name']
+
+class ProfileUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['image']
