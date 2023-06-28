@@ -105,7 +105,7 @@
   padding-top: 20px;
   padding-bottom: 12px;
   background: rgba(255, 255, 255, 0.5);
-  display: none;
+  display: block;
 }
 .results-section .heading {
   color: #183b56;
@@ -140,8 +140,8 @@
 .results-section .results .user:last-child {
   margin-bottom: 0;
 }
-.results-section .results .user .place {
-  font-size: 22px;
+.results-section .results .user .resultPlace {
+  font-size: 20px;
   color: #183b56;
   font-weight: 700;
   padding-inline: 17px;

@@ -20,13 +20,71 @@ from .models import *
 # Home
 @login_required
 def home(request):      
+
+    return render(request, 'core/home.html')
+    
+
+@login_required
+def day(request):      
     profiles = Profile.objects.filter(active=True)
+
+    profiles = Profile.objects.order_by('-day_points')  # Sort by points in descending order
 
     context = {
         'profiles': profiles,
     }
-    return render(request, 'core/home.html', context)
-    
+    return render(request, 'hof/day.html', context)    
+
+def reset_day_points():
+    # Reset the day points of all profiles to 0
+    Profile.objects.update(day_points=0)
+
+
+
+@login_required
+def week(request):      
+    profiles = Profile.objects.filter(active=True)
+
+    profiles = Profile.objects.order_by('-week_points')  # Sort by points in descending order
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'hof/week.html', context)    
+
+
+@login_required
+def month(request):      
+    profiles = Profile.objects.filter(active=True)
+
+    profiles = Profile.objects.order_by('-month_points')  # Sort by points in descending order
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'hof/month.html', context)    
+
+@login_required
+def year(request):      
+    profiles = Profile.objects.filter(active=True)
+
+    profiles = Profile.objects.order_by('-year_points')  # Sort by points in descending order
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'hof/year.html', context)    
+
+@login_required
+def alltime(request):      
+    profiles = Profile.objects.filter(active=True)
+
+    profiles = Profile.objects.order_by('-alltime_points')  # Sort by points in descending order
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'hof/alltime.html', context)    
 
 
 

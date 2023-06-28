@@ -109,7 +109,7 @@ $txt: #183b56;
     padding-top: 20px;
     padding-bottom: 12px;
     background: rgba(255,255,255,0.5);
-    display: none;
+    display: block;
    .heading{
     color: $txt;
     font-size: 28px;
@@ -141,8 +141,8 @@ $txt: #183b56;
         &:last-child{
             margin-bottom: 0;
         }
-        .place{
-            font-size: 22px;
+        .resultPlace{
+            font-size: 20px;
             color: $txt;
             font-weight: 700;
             padding-inline: 17px;
