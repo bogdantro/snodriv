@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="{% static '/scss/global/global.css' %}" type="text/css">
 <script src="{% static '/js/home.js' %}"></script>
 
-
 <div class="page">
 <div class="actions">
 
@@ -29,9 +28,14 @@
   </div>
 
 
-  <div class="results-section" id="hallOfFameYearSec">
-    <h1 class="heading">Hall of Fame</h1>
-    <h2>År</h2>
+  <div class="results-section" id="hallOfFameAllTimeSec">
+    <h1 class="heading">Competition</h1>
+    <div class="prize">
+        <h2>Premie</h2>
+        {% for comp in comp %}
+        <p>{{comp.prize}}</p>
+        {% endfor %}
+    </div>
     <div class="results">
       {% for profile in profiles %}
       <div class="user">
@@ -40,7 +44,7 @@
         </div>
         <div class="img"><img src="{{profile.image.url}}" alt=""></div>
         <div class="name">{{profile.user.get_full_name}}</div>
-        <div class="points">{{profile.year_points}}</div>
+        <div class="points">{{profile.alltime_points}}</div>
       </div>
       {% endfor %}
     </div>

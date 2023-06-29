@@ -32,3 +32,10 @@ class Profile(models.Model):
         
         self.previous_day_points = self.day_points
         super(Profile, self).save(*args, **kwargs)
+
+
+class Competition(models.Model):
+    prize = models.TextField()    
+
+    def __str__(self):
+        return self.prize

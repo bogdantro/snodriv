@@ -4,13 +4,39 @@
   background: transparent;
   margin-bottom: 0;
 }
-.myaccount .heading {
-  padding-block: 20px;
-  text-align: center;
+.myaccount .top {
   background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 18px;
+}
+.myaccount .top .back-to-home {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.myaccount .top .back-to-home p {
+  margin-bottom: 0;
   color: #183b56;
-  font-size: 28px;
+  font-size: 17px;
   font-weight: 600;
+  margin-left: 10px;
+}
+.myaccount .top .back-to-home span {
+  background: #183b56;
+  width: 55px;
+  height: 2px;
+  display: block;
+  position: relative;
+  border-radius: 4px;
+}
+.myaccount .top .heading {
+  color: #183b56;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 .myaccount .flex {
   display: unset;
@@ -98,6 +124,7 @@
   border-radius: 4px;
   background: #08A1CF;
   color: rgb(246, 246, 246);
+  font-weight: 400;
 }
 .myaccount .account-card .your-info .user-info {
   text-align: left;
@@ -129,4 +156,5 @@
   border-radius: 4px;
   background: #08A1CF;
   color: rgb(246, 246, 246);
+  font-weight: 400;
 }/*# sourceMappingURL=myaccount.css.map */

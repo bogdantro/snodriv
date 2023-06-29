@@ -20,9 +20,7 @@ from .models import *
 # Home
 @login_required
 def home(request):      
-    profiles = Profile.objects.filter(active=True)
-
-    profiles = Profile.objects.order_by('-day_points')  # Sort by points in descending order
+    profiles = Profile.objects.filter(active=True).order_by('-week_points')
 
     context = {
         'profiles': profiles,
@@ -38,9 +36,7 @@ def home(request):
 
 @login_required
 def week(request):      
-    profiles = Profile.objects.filter(active=True)
-
-    profiles = Profile.objects.order_by('-week_points')  # Sort by points in descending order
+    profiles = Profile.objects.filter(active=True).order_by('-week_points')
 
     context = {
         'profiles': profiles,
@@ -50,9 +46,7 @@ def week(request):
 
 @login_required
 def month(request):      
-    profiles = Profile.objects.filter(active=True)
-
-    profiles = Profile.objects.order_by('-month_points')  # Sort by points in descending order
+    profiles = Profile.objects.filter(active=True).order_by('-week_points')
 
     context = {
         'profiles': profiles,
@@ -61,9 +55,7 @@ def month(request):
 
 @login_required
 def year(request):      
-    profiles = Profile.objects.filter(active=True)
-
-    profiles = Profile.objects.order_by('-year_points')  # Sort by points in descending order
+    profiles = Profile.objects.filter(active=True).order_by('-week_points')
 
     context = {
         'profiles': profiles,
@@ -72,9 +64,7 @@ def year(request):
 
 @login_required
 def alltime(request):      
-    profiles = Profile.objects.filter(active=True)
-
-    profiles = Profile.objects.order_by('-alltime_points')  # Sort by points in descending order
+    profiles = Profile.objects.filter(active=True).order_by('-week_points')
 
     context = {
         'profiles': profiles,
@@ -82,7 +72,17 @@ def alltime(request):
     return render(request, 'hof/alltime.html', context)    
 
 
+@login_required
+def comp(request):
+    profiles = Profile.objects.filter(active=True).order_by('-week_points')
 
+    comp = Competition.objects.all()
+
+    context = {
+        'profiles': profiles,
+        'comp': comp,
+    }
+    return render(request, 'comp/comp.html', context)  
 
 
 

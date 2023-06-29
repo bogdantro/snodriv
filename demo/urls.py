@@ -14,11 +14,16 @@ from apps.userprofile.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # Hall of Fame
     path('', home, name='home'),
     path('hall-of-fame-uke/', week, name='week'),
     path('hall-of-fame-maaned/', month, name='month'),
     path('hall-of-fame-aar/', year, name='year'),
     path('hall-of-fame-alltime/', alltime, name='alltime'),
+
+    # Comp
+    path('competition/', comp, name='comp'),
 
     # Auth
     path('logg-inn/', views.LoginView.as_view(template_name='core/login.html'), name='login'),
