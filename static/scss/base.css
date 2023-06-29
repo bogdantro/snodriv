@@ -125,7 +125,7 @@
   transform: translateX(-50%);
   border: 1px dotted goldenrod;
   margin-top: 14px;
-  height: 105px;
+  height: auto;
   border-radius: 4px;
 }
 .results-section .prize p {

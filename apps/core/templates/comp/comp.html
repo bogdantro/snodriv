@@ -34,6 +34,8 @@
         <h2>Premie</h2>
         {% for comp in comp %}
         <p>{{comp.prize}}</p>
+        <hr>
+        <p>Vinner: <strong>{{comp.winner}}</strong></p>
         {% endfor %}
     </div>
     <div class="results">

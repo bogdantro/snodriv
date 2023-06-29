@@ -76,7 +76,7 @@ def alltime(request):
 def comp(request):
     profiles = Profile.objects.filter(active=True).order_by('-week_points')
 
-    comp = Competition.objects.all()
+    comp = Competition.objects.filter(active=True)
 
     context = {
         'profiles': profiles,
