@@ -15,7 +15,6 @@ from apps.userprofile.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
-    path('hall-of-fame-dag/', day, name='day'),
     path('hall-of-fame-uke/', week, name='week'),
     path('hall-of-fame-maaned/', month, name='month'),
     path('hall-of-fame-aar/', year, name='year'),

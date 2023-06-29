@@ -14,7 +14,7 @@
     <button onclick="hallOfFame()" id="hallOfFameBtn">Hall of Fame</button>
     <div class="sidebar" id="hallOfFameChoices">
       <h1 class="heading">Hall of Fame</h1> <i onclick="hallOfFameClose()" class="fa-solid fa-xmark"></i>
-      <a onclick="window.location.href='/hall-of-fame-dag/'">Dag</a>
+      <a onclick="window.location.href='/'">Dag</a>
       <a onclick="window.location.href='/hall-of-fame-uke/'">Uke</a>
       <a onclick="window.location.href='/hall-of-fame-maaned/'">Måned</a>
       <a onclick="window.location.href='/hall-of-fame-aar/'">År</a>
@@ -29,8 +29,23 @@
     
   </div>
 
-  <h1 class="main-text">Oversikt over antall salg</h1>
-  <p class="main-text-p">Velg filtre over</p>
+ 
+  <div class="results-section" id="hallOfFameDaySec">
+    <h1 class="heading">Hall of Fame</h1>
+    <h2>Dag</h2>
+    <div class="results">
+      {% for profile in profiles %}
+      <div class="user">
+        <div class="resultPlace">
+{{ forloop.counter }}{% if forloop.counter == 1 %}st{% elif forloop.counter == 2 %}nd{% elif forloop.counter == 3 %}rd{% else %}th{% endif %} 
+        </div>
+        <div class="img"><img src="{{profile.image.url}}" alt=""></div>
+        <div class="name">{{profile.user.get_full_name}}</div>
+        <div class="points">{{profile.day_points}}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 
 
 
