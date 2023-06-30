@@ -20,7 +20,7 @@ from .models import *
 # Home
 @login_required
 def home(request):      
-    profiles = Profile.objects.filter(active=True).order_by('-week_points')
+    profiles = Profile.objects.filter(active=True).order_by('-day_points')
 
     context = {
         'profiles': profiles,
@@ -46,7 +46,7 @@ def week(request):
 
 @login_required
 def month(request):      
-    profiles = Profile.objects.filter(active=True).order_by('-week_points')
+    profiles = Profile.objects.filter(active=True).order_by('-month_points')
 
     context = {
         'profiles': profiles,
@@ -55,7 +55,7 @@ def month(request):
 
 @login_required
 def year(request):      
-    profiles = Profile.objects.filter(active=True).order_by('-week_points')
+    profiles = Profile.objects.filter(active=True).order_by('-year_points')
 
     context = {
         'profiles': profiles,
@@ -64,7 +64,7 @@ def year(request):
 
 @login_required
 def alltime(request):      
-    profiles = Profile.objects.filter(active=True).order_by('-week_points')
+    profiles = Profile.objects.filter(active=True).order_by('-alltime_points')
 
     context = {
         'profiles': profiles,
@@ -74,7 +74,7 @@ def alltime(request):
 
 @login_required
 def comp(request):
-    profiles = Profile.objects.filter(active=True).order_by('-week_points')
+    profiles = Profile.objects.filter(active=True).order_by('-comp_points')
 
     comp = Competition.objects.filter(active=True)
 
