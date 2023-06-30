@@ -13,6 +13,7 @@ class Profile(models.Model):
     month_points = models.IntegerField(default=0)
     year_points = models.IntegerField(default=0)
     alltime_points = models.IntegerField(default=0)
+    comp_points = models.IntegerField(default=0)
     active = models.BooleanField(default=True)
 
     def __str__(self):
