@@ -193,4 +193,215 @@
 }
 .results-section.active {
   display: block;
+}
+
+@media only screen and (min-device-width: 1140px) {
+  .actions {
+    padding-block: 12px;
+    padding-inline: 18px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    overflow-y: hidden !important;
+  }
+  .actions .sidebar {
+    background: white;
+    width: 100%;
+    height: 0;
+    border-radius: 4px;
+    position: absolute;
+    top: 60px;
+    left: -120px;
+    z-index: 10000;
+    box-shadow: 0 0 2px rgb(246, 246, 246);
+    text-align: left;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+    overflow-y: hidden !important;
+  }
+  .actions .sidebar i {
+    position: absolute;
+    right: 400px;
+    color: #183b56;
+    font-size: 26px;
+    top: 28px;
+    padding: 12px 17px;
+    margin: -12px -17px;
+    background: rgb(235, 235, 235);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .actions .sidebar i:hover {
+    background: gray;
+  }
+  .actions .sidebar .heading {
+    font-size: 26px;
+    color: #183b56;
+    font-weight: 500;
+    padding-left: 400px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .actions .sidebar a {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    color: #183b56;
+    font-size: 18px;
+    padding-block: 20px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.25);
+    padding-inline: 250px;
+    margin-inline: 255px;
+    cursor: pointer;
+  }
+  .actions .sidebar a:hover {
+    background: rgb(246, 246, 246);
+  }
+  .actions .sidebar a:nth-child(3) {
+    border-top: 1px solid rgba(100, 100, 100, 0.25);
+  }
+  .actions .sidebar.active {
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    pointer-events: visible;
+  }
+  .actions button {
+    padding: 6px 18px;
+    margin: 8px 4px;
+    color: #183b56;
+    background: rgba(232, 232, 232, 0.75);
+    border-radius: 20px;
+    border: 1px solid transparent;
+    outline: none;
+    transition: 0.2s;
+  }
+  .actions button.active {
+    background: rgb(215, 215, 215);
+    transform: scale(1.01);
+  }
+  .actions button:first-child {
+    margin-left: 0;
+  }
+  .main-text {
+    font-size: 30px;
+    color: #183b56;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-inline: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+    border-top: 1px solid rgba(100, 100, 100, 0.15);
+  }
+  .main-text-p {
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 19px;
+    color: #183b56;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  .results-section {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    background: rgba(255, 255, 255, 0.5);
+    display: block;
+    max-width: 1100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .results-section .heading {
+    color: #183b56;
+    font-size: 32px;
+  }
+  .results-section h2 {
+    font-size: 19px;
+    color: #183b56;
+    margin-right: 6px;
+  }
+  .results-section .prize {
+    background: white;
+    width: 95%;
+    padding: 15px 12px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px dotted goldenrod;
+    margin-top: 14px;
+    height: auto;
+    border-radius: 4px;
+    max-width: 450px;
+  }
+  .results-section .prize p {
+    color: #183b56;
+    font-size: 15px;
+  }
+  .results-section .results {
+    margin-top: 27px;
+  }
+  .results-section .results .user {
+    background: white;
+    width: 450px;
+    max-width: 450px;
+    padding: 10px;
+    padding-left: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgb(230, 230, 230);
+    margin-block: 12px;
+    display: flex;
+    align-items: center;
+    height: 105px;
+    border-radius: 4px;
+  }
+  .results-section .results .user:first-child {
+    margin-top: 0;
+  }
+  .results-section .results .user:last-child {
+    margin-bottom: 0;
+  }
+  .results-section .results .user .resultPlace {
+    font-size: 20px;
+    color: #183b56;
+    font-weight: 700;
+    padding-inline: 17px;
+    padding-left: 13px;
+  }
+  .results-section .results .user .img {
+    border-radius: 100%;
+    width: 58px;
+    height: 58px;
+    overflow: hidden;
+    position: relative;
+  }
+  .results-section .results .user .img img {
+    width: 58px;
+    height: 58px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .results-section .results .user .name {
+    width: 170px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 18px;
+  }
+  .results-section .results .user .points {
+    margin-left: auto;
+    padding-right: 5px;
+    color: #183b56;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .results-section.active {
+    display: block;
+  }
 }/*# sourceMappingURL=base.css.map */
