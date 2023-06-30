@@ -5,10 +5,13 @@ from django.contrib.auth import login
 from textwrap import dedent
 from django.core.mail import send_mail, BadHeaderError
 from .forms import *
+from apps.core.models import *
 
 
 @login_required
 def myaccount(request):
+    comp = Competition.objects.filter(user=request.user).first()
+
     if request.method == 'POST':
         p_form =  ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile)
         if p_form.is_valid():
@@ -34,6 +37,7 @@ def myaccount(request):
             u_form = UserUpdateForm()    
 
     context = {
+        'comp':comp,
     }
 
     return render(request, 'core/myaccount.html', context)

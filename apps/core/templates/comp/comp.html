@@ -35,7 +35,7 @@
         {% for comp in comp %}
         <p>{{comp.prize}}</p>
         <hr>
-        <p>Vinner: <strong>{{comp.winner}}</strong></p>
+        <p>Vinner: <strong>{% if comp.winner %}{{comp.winner}}{% else %}Ingen vinner enda{% endif %}</strong></p>
         {% endfor %}
     </div>
     <div class="results">

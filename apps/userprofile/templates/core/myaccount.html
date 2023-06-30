@@ -56,6 +56,23 @@
                         <button type="submit">Endre info</button>
                     </form>
                 </div>
+
+                <hr style="margin-block: 35px;">
+
+                <div class="user-won-comp">
+                    <h1 class="heading">Vunnet konkurranser</h1>
+                    <div class="comps-sec">
+                        {% for comp in request.user.comps.all %}
+                        <hr>
+                        {{comp}}
+                        {% empty %}
+                        <div class="empty">
+                            <h1>Du har ikke vunnet enda</h1>
+                            <p>Prøv hardere neste gang!</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
         </div>
     </div>

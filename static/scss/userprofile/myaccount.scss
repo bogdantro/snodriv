@@ -158,6 +158,29 @@ $txt: #183b56;
               font-weight: 400;
             }
           }
+          .user-won-comp{
+              .heading{
+                color: $txt;
+                font-size: 24px;
+                font-weight: 00;
+                margin-bottom: 0;
+                text-align: center;
+              }
+              .comps-sec{
+                margin-top: 12px;
+                .empty{
+                  h1{
+                    margin-bottom: 5px;
+                    color: $txt;
+                    font-size: 18px;
+                  }
+                  p{
+                    color: $txt;
+                    font-size: 15px;
+                  }
+                }
+              }
+          }
         }
     }
 }

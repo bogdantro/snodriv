@@ -35,7 +35,7 @@ class Profile(models.Model):
 
 
 class Competition(models.Model):
-    winner = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
+    user = models.ForeignKey(User, related_name='comps', on_delete=models.CASCADE, blank=True, null=True)
     prize = models.TextField()    
     created_at = models.DateTimeField(default=timezone.now)
     active = models.BooleanField(default=True)

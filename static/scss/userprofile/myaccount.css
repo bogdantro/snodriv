@@ -157,4 +157,23 @@
   background: #08A1CF;
   color: rgb(246, 246, 246);
   font-weight: 400;
+}
+.myaccount .account-card .your-info .user-won-comp .heading {
+  color: #183b56;
+  font-size: 24px;
+  font-weight: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.myaccount .account-card .your-info .user-won-comp .comps-sec {
+  margin-top: 12px;
+}
+.myaccount .account-card .your-info .user-won-comp .comps-sec .empty h1 {
+  margin-bottom: 5px;
+  color: #183b56;
+  font-size: 18px;
+}
+.myaccount .account-card .your-info .user-won-comp .comps-sec .empty p {
+  color: #183b56;
+  font-size: 15px;
 }/*# sourceMappingURL=myaccount.css.map */
