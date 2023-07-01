@@ -69,4 +69,83 @@
 }
 .login #loginForm .form-actions button:hover {
   transform: scale(1.01);
+}
+
+@media only screen and (min-device-width: 1140px) {
+  .login {
+    padding-top: 25px;
+    min-height: 80vh;
+  }
+  .login #loginForm {
+    width: auto;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .login #loginForm .text {
+    text-align: center;
+  }
+  .login #loginForm .inputs-labels {
+    padding-inline: 20px;
+    max-width: 400px;
+    padding-block: 28px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .login #loginForm .inputs-labels label {
+    color: #183b56;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .login #loginForm .inputs-labels input {
+    width: 100%;
+    height: 53px;
+    border: 1px solid lightgray;
+    outline: none;
+    padding: 8px;
+    color: #183b56;
+    font-size: 16px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+  }
+  .login #loginForm .inputs-labels input:focus, .login #loginForm .inputs-labels input:active {
+    border: 2px solid #08A1CF;
+    cursor: text;
+    background: rgb(255, 255, 255);
+  }
+  .login #loginForm .inputs-labels input::-moz-placeholder {
+    color: #183B56;
+    opacity: 0.6;
+  }
+  .login #loginForm .inputs-labels input::placeholder {
+    color: #183B56;
+    opacity: 0.6;
+  }
+  .login #loginForm .form-actions {
+    padding-inline: 20px;
+    max-width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .login #loginForm .form-actions button {
+    width: 100%;
+    height: 57px;
+    background: #08A1CF;
+    color: rgb(246, 246, 246);
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+    outline: none;
+    font-weight: 400;
+  }
+  .login #loginForm .form-actions button:hover {
+    transform: scale(1.01);
+  }
 }/*# sourceMappingURL=login.css.map */
