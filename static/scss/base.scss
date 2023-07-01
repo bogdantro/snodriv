@@ -2,7 +2,9 @@ $black: #1F1F1F;
 $white: rgb(246,246,246);
 $primBtn: #08A1CF;
 $txt: #183b56;
- 
+$result-section-font-size: 17px;
+$place-number-sizes: (1: 26px, 2: 222px, 3: 139px);
+
 .actions{
     padding-block: 12px;
     padding-inline: 18px;
@@ -101,7 +103,7 @@ $txt: #183b56;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 12px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.3);
     display: block;
    .heading{
     color: $txt;
@@ -130,7 +132,6 @@ $txt: #183b56;
    }
    .results{
     margin-top: 7px;
-    background: rgba(255,255,255, 0.12);
     padding-block: 20px;
     .user{
         width: 95%;
@@ -142,7 +143,7 @@ $txt: #183b56;
         margin-block: 12px;
         display: flex;
         align-items: center;
-        height: 100px;
+        height: 95px;
         border-bottom: 1px solid rgba(0,0,0,0.1);
         &:first-child{
             border-top: 1px solid rgba(0,0,0,0.1);
@@ -152,11 +153,11 @@ $txt: #183b56;
             margin-bottom: 0;
         }
         .resultPlace{
-            font-size: 20px;
-            color: $txt;
             font-weight: 700;
             padding-inline: 17px;
             padding-left: 13px;
+            color: $txt;
+            font-size: 22px !important;
         }
         .img{
             border-radius: 100%;
@@ -181,7 +182,7 @@ $txt: #183b56;
             margin-left: auto;
             padding-right: 10px;
             color: $primBtn;
-            font-size: 20px;
+            font-size: 22px !important;
             font-weight: 600;
             text-align: center;
         }
@@ -302,7 +303,7 @@ $txt: #183b56;
         text-align: center;
         padding-top: 20px;
         padding-bottom: 55px;
-        background: rgba(255,255,255,0.5);
+        background: rgba(255,255,255,0.3);
         display: block;
         max-width: 1100px;
         position: relative;
@@ -311,6 +312,7 @@ $txt: #183b56;
        .heading{
         color: $txt;
         font-size: 30px;
+        font-weight: 700;
        }
        h2{
         font-size: 19px;
@@ -336,32 +338,32 @@ $txt: #183b56;
        }
        .results{
         margin-top: 27px;
-        background: rgba(255,255,255,0.4);
         .user{
-            width: 360px;
-            max-width: 360px;
-            padding: 10px;
-            padding-left: 2px;
+            width: 440px;
+            max-width: 440px;
+            padding: 10px 3px;
+            padding-left: 1px;
             position: relative;
             left: 50%;
             transform: translateX(-50%);
-            margin-block: 12px;
+            margin-block: 0px;
             display: flex;
             align-items: center;
-            height: 105px;
+            height: 90px;
             &:first-child{
                 margin-top: 0;
             }
             &:last-child{
                 margin-bottom: 0;
             }
-            .resultPlace{
-                font-size: 20px;
+            .resultPlace {
                 color: $txt;
                 font-weight: 700;
                 padding-inline: 17px;
                 padding-left: 13px;
-            }
+                font-size: 17px;
+                display: flex;
+              }
             .img{
                 border-radius: 100%;
                 width: 58px;

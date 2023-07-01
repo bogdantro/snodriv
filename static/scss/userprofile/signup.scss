@@ -73,3 +73,79 @@ $txt: #183b56;
         }
     }
 }
+
+
+@media only screen and (min-device-width: 1140px) {
+    .signup{
+        padding-top: 25px;
+        min-height: 80vh;
+        #signUpForm{
+            width: auto;
+            margin: auto;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            .text{
+                text-align: center;
+            }
+            .inputs-labels{
+                padding-inline: 20px;
+                max-width: 400px;
+                padding-block: 28px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                label{
+                    color: $txt;
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+                input{
+                    width: 100%;
+                    height: 53px;
+                    border: 1px solid lightgray;
+                    outline: none;
+                    padding: 8px;
+                    color: $txt;
+                    font-size: 16px;
+                    cursor: pointer;
+                    background: rgba(255,255,255,0.7);
+                    border-radius: 4px;
+                    &:focus, &:active{
+                        border: 2px solid $primBtn;
+                        cursor: text;
+                        background: rgba(255,255,255,1);
+                    }
+                    &::placeholder{
+                        color: #183B56;
+                        opacity: 0.6;
+                    }
+                }
+            }
+            .form-actions{
+                padding-inline: 20px;
+                max-width: 400px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                button{
+                    width: 100%;
+                    height: 57px;
+                    background: $primBtn;
+                    color: $white;
+                    border-radius: 4px;
+                    font-size: 16px;
+                    padding: 3px;
+                    cursor: pointer;
+                    transition: .4s;
+                    border: none;
+                    outline: none;
+                    font-weight: 400;
+                    &:hover{
+                        transform: scale(1.01);
+                    }
+                }
+            }
+        }
+    }
+}

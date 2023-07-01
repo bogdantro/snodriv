@@ -96,7 +96,7 @@
   text-align: center;
   padding-top: 20px;
   padding-bottom: 12px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
   display: block;
 }
 .results-section .heading {
@@ -126,7 +126,6 @@
 }
 .results-section .results {
   margin-top: 7px;
-  background: rgba(255, 255, 255, 0.12);
   padding-block: 20px;
 }
 .results-section .results .user {
@@ -139,7 +138,7 @@
   margin-block: 12px;
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 95px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .results-section .results .user:first-child {
@@ -150,11 +149,11 @@
   margin-bottom: 0;
 }
 .results-section .results .user .resultPlace {
-  font-size: 20px;
-  color: #183b56;
   font-weight: 700;
   padding-inline: 17px;
   padding-left: 13px;
+  color: #183b56;
+  font-size: 22px !important;
 }
 .results-section .results .user .img {
   border-radius: 100%;
@@ -180,7 +179,7 @@
   margin-left: auto;
   padding-right: 10px;
   color: #08A1CF;
-  font-size: 20px;
+  font-size: 22px !important;
   font-weight: 600;
   text-align: center;
 }
@@ -295,7 +294,7 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 55px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3);
     display: block;
     max-width: 1100px;
     position: relative;
@@ -305,6 +304,7 @@
   .results-section .heading {
     color: #183b56;
     font-size: 30px;
+    font-weight: 700;
   }
   .results-section h2 {
     font-size: 19px;
@@ -330,20 +330,19 @@
   }
   .results-section .results {
     margin-top: 27px;
-    background: rgba(255, 255, 255, 0.4);
   }
   .results-section .results .user {
-    width: 360px;
-    max-width: 360px;
-    padding: 10px;
-    padding-left: 2px;
+    width: 440px;
+    max-width: 440px;
+    padding: 10px 3px;
+    padding-left: 1px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-block: 12px;
+    margin-block: 0px;
     display: flex;
     align-items: center;
-    height: 105px;
+    height: 90px;
   }
   .results-section .results .user:first-child {
     margin-top: 0;
@@ -352,11 +351,12 @@
     margin-bottom: 0;
   }
   .results-section .results .user .resultPlace {
-    font-size: 20px;
     color: #183b56;
     font-weight: 700;
     padding-inline: 17px;
     padding-left: 13px;
+    font-size: 17px;
+    display: flex;
   }
   .results-section .results .user .img {
     border-radius: 100%;
