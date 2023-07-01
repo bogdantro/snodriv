@@ -157,7 +157,7 @@ $place-number-sizes: (1: 26px, 2: 222px, 3: 139px);
             padding-inline: 17px;
             padding-left: 13px;
             color: $txt;
-            font-size: 22px !important;
+            font-size: 21px;
         }
         .img{
             border-radius: 100%;
@@ -182,7 +182,7 @@ $place-number-sizes: (1: 26px, 2: 222px, 3: 139px);
             margin-left: auto;
             padding-right: 10px;
             color: $primBtn;
-            font-size: 22px !important;
+            font-size: 21px;
             font-weight: 600;
             text-align: center;
         }
@@ -341,7 +341,7 @@ $place-number-sizes: (1: 26px, 2: 222px, 3: 139px);
         .user{
             width: 440px;
             max-width: 440px;
-            padding: 10px 3px;
+            padding: 8px 3px;
             padding-left: 1px;
             position: relative;
             left: 50%;
@@ -349,7 +349,7 @@ $place-number-sizes: (1: 26px, 2: 222px, 3: 139px);
             margin-block: 0px;
             display: flex;
             align-items: center;
-            height: 90px;
+            height: 85px;
             &:first-child{
                 margin-top: 0;
             }
@@ -361,8 +361,7 @@ $place-number-sizes: (1: 26px, 2: 222px, 3: 139px);
                 font-weight: 700;
                 padding-inline: 17px;
                 padding-left: 13px;
-                font-size: 17px;
-                display: flex;
+                font-size: 22px;
               }
             .img{
                 border-radius: 100%;
@@ -387,7 +386,7 @@ $place-number-sizes: (1: 26px, 2: 222px, 3: 139px);
                 margin-left: auto;
                 padding-right: 5px;
                 color: $primBtn;
-                font-size: 19px;
+                font-size: 22px;
                 font-weight: 600;
                 text-align: center;
             }

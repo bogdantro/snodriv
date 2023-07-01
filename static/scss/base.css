@@ -153,7 +153,7 @@
   padding-inline: 17px;
   padding-left: 13px;
   color: #183b56;
-  font-size: 22px !important;
+  font-size: 21px;
 }
 .results-section .results .user .img {
   border-radius: 100%;
@@ -179,7 +179,7 @@
   margin-left: auto;
   padding-right: 10px;
   color: #08A1CF;
-  font-size: 22px !important;
+  font-size: 21px;
   font-weight: 600;
   text-align: center;
 }
@@ -334,7 +334,7 @@
   .results-section .results .user {
     width: 440px;
     max-width: 440px;
-    padding: 10px 3px;
+    padding: 8px 3px;
     padding-left: 1px;
     position: relative;
     left: 50%;
@@ -342,7 +342,7 @@
     margin-block: 0px;
     display: flex;
     align-items: center;
-    height: 90px;
+    height: 85px;
   }
   .results-section .results .user:first-child {
     margin-top: 0;
@@ -355,8 +355,7 @@
     font-weight: 700;
     padding-inline: 17px;
     padding-left: 13px;
-    font-size: 17px;
-    display: flex;
+    font-size: 22px;
   }
   .results-section .results .user .img {
     border-radius: 100%;
@@ -382,7 +381,7 @@
     margin-left: auto;
     padding-right: 5px;
     color: #08A1CF;
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 600;
     text-align: center;
   }
