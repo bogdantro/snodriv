@@ -21,7 +21,34 @@
 
     <button onclick="window.location.href='/competition/'">Competition</button>
 
-    <button onclick="history()" id="historyBtn">History</button>
+    <button onclick="cat()" id="historyBtn">Categories</button>
+    <div class="sidebar" id="catChoices">
+      <h1 class="heading">Categories</h1> <i onclick="catClose()" class="fa-solid fa-xmark"></i>
+      <a onclick="tbbExtra()">TBB</a>
+      <div class="sub-sidebar" id="tbbExtraSide">
+        <a onclick="window.location.href='/cat-tbb-day/'">Dag</a>
+        <a onclick="window.location.href='/cat-tbb-week/'">Uke</a>
+        <a onclick="window.location.href='/cat-tbb-month/'">Måned</a>
+        <a onclick="window.location.href='/cat-tbb-year/'">År</a>
+        <a onclick="window.location.href='/cat-tbb-alltime/'">All time</a>
+        </div>
+      <a onclick="fiberExtra()">Fiber</a>
+      <div class="sub-sidebar" id="fiberExtraSide">
+        <a onclick="window.location.href='/cat-fiber-day/'">Dag</a>
+        <a onclick="window.location.href='/cat-fiber-week/'">Uke</a>
+        <a onclick="window.location.href='/cat-fiber-month/'">Måned</a>
+        <a onclick="window.location.href='/cat-fiber-year/'">År</a>
+        <a onclick="window.location.href='/cat-fiber-alltime/'">All time</a>
+        </div>
+      <a onclick="densExtra()">Densification</a>
+      <div class="sub-sidebar" id="densExtraSide">
+        <a onclick="window.location.href='/cat-dens-day/'">Dag</a>
+        <a onclick="window.location.href='/cat-dens-week/'">Uke</a>
+        <a onclick="window.location.href='/cat-dens-month/'">Måned</a>
+        <a onclick="window.location.href='/cat-dens-year/'">År</a>
+        <a onclick="window.location.href='/cat-dens-alltime/'">All time</a>
+        </div>
+    </div>
 
     <button onclick="window.location.href='/min-bruker/'">Min bruker</button>
     

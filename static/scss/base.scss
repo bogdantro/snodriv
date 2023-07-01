@@ -22,6 +22,20 @@ $txt: #183b56;
         opacity: 0;
         pointer-events: none;
         transition: .2s;
+        .sub-sidebar{
+            display: none;
+            a{
+                padding-left: 60px;
+                font-size: 15px;
+                background: rgb(250,250,250);
+                &:nth-child(3){
+                    border-top: none;
+                }
+            }
+            &.active{
+                display: block;
+            }
+        }
         i{
             position: absolute;
             right: 45px;

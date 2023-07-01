@@ -19,6 +19,20 @@
   pointer-events: none;
   transition: 0.2s;
 }
+.actions .sidebar .sub-sidebar {
+  display: none;
+}
+.actions .sidebar .sub-sidebar a {
+  padding-left: 60px;
+  font-size: 15px;
+  background: rgb(250, 250, 250);
+}
+.actions .sidebar .sub-sidebar a:nth-child(3) {
+  border-top: none;
+}
+.actions .sidebar .sub-sidebar.active {
+  display: block;
+}
 .actions .sidebar i {
   position: absolute;
   right: 45px;

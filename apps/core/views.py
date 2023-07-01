@@ -87,6 +87,150 @@ def comp(request):
 
 
 
+@login_required
+def tbb_day(request):
+    profiles = Profile.objects.filter(TBB=True).order_by('-TBB_day_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'tbb/tbb-day.html', context)  
+
+@login_required
+def tbb_week(request):
+    profiles = Profile.objects.filter(TBB=True).order_by('-TBB_week_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'tbb/tbb-week.html', context)  
+
+@login_required
+def tbb_month(request):
+    profiles = Profile.objects.filter(TBB=True).order_by('-TBB_month_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'tbb/tbb-month.html', context)  
+
+@login_required
+def tbb_year(request):
+    profiles = Profile.objects.filter(TBB=True).order_by('-TBB_year_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'tbb/tbb-year.html', context)  
+
+@login_required
+def tbb_alltime(request):
+    profiles = Profile.objects.filter(TBB=True).order_by('-TBB_alltime_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'tbb/tbb-alltime.html', context)  
+
+
+
+
+@login_required
+def fiber_day(request):
+    profiles = Profile.objects.filter(Fiber=True).order_by('-Fiber_day_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'fiber/fiber-day.html', context)  
+
+
+@login_required
+def fiber_week(request):
+    profiles = Profile.objects.filter(Fiber=True).order_by('-Fiber_week_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'fiber/fiber-week.html', context)  
+
+
+@login_required
+def fiber_month(request):
+    profiles = Profile.objects.filter(Fiber=True).order_by('-Fiber_month_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'fiber/fiber-month.html', context)  
+
+
+@login_required
+def fiber_year(request):
+    profiles = Profile.objects.filter(Fiber=True).order_by('-Fiber_year_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'fiber/fiber-year.html', context)  
+
+
+@login_required
+def fiber_alltime(request):
+    profiles = Profile.objects.filter(Fiber=True).order_by('-Fiber_alltime_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'fiber/fiber-alltime.html', context)  
+
+
+
+@login_required
+def dens_day(request):
+    profiles = Profile.objects.filter(Densification=True).order_by('-Densification_day_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'dens/dens-day.html', context)  
+@login_required
+def dens_week(request):
+    profiles = Profile.objects.filter(Densification=True).order_by('-Densification_week_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'dens/dens-week.html', context)  
+@login_required
+def dens_month(request):
+    profiles = Profile.objects.filter(Densification=True).order_by('-Densification_month_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'dens/dens-month.html', context)  
+@login_required
+def dens_year(request):
+    profiles = Profile.objects.filter(Densification=True).order_by('-Densification_year_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'dens/dens-year.html', context)  
+@login_required
+def dens_alltime(request):
+    profiles = Profile.objects.filter(Densification=True).order_by('-Densification_alltime_points')
+
+    context = {
+        'profiles': profiles,
+    }
+    return render(request, 'dens/dens-alltime.html', context)  
+
+
+
+
+
 
 # def contact(request):
 #     if request.method=='POST' and 'contact' in request.POST:

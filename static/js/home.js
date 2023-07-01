@@ -1,79 +1,40 @@
 function hallOfFame(){
     document.getElementById('hallOfFameChoices').classList.add('active');
-
-    document.getElementById('hideOne').style.display = 'none';
-    document.getElementById('hideTwo').style.display = 'none';
-}
-
-function hallOfFameDay(){
-    document.getElementById('hallOfFameDaySec').classList.add('active');
-    
-    document.getElementById('hallOfFameChoices').classList.remove('active');
-
-    document.getElementById('hallOfFameWeekSec').classList.remove('active');
-    document.getElementById('hallOfFameMonthSec').classList.remove('active');
-    document.getElementById('hallOfFameYearSec').classList.remove('active');
-    document.getElementById('hallOfFameAllTimeSec').classList.remove('active');
-}
-
-function hallOfFameWeek(){
-    document.getElementById('hallOfFameWeekSec').classList.add('active');
-
-    document.getElementById('hallOfFameChoices').classList.remove('active');
-
-    document.getElementById('hallOfFameDaySec').classList.remove('active');
-    document.getElementById('hallOfFameMonthSec').classList.remove('active');
-    document.getElementById('hallOfFameYearSec').classList.remove('active');
-    document.getElementById('hallOfFameAllTimeSec').classList.remove('active');
-}
-
-function hallOfFameMonth(){
-    document.getElementById('hallOfFameMonthSec').classList.add('active');
-
-    document.getElementById('hallOfFameChoices').classList.remove('active');
-
-    document.getElementById('hallOfFameWeekSec').classList.remove('active');
-    document.getElementById('hallOfFameDaySec').classList.remove('active');
-    document.getElementById('hallOfFameYearSec').classList.remove('active');
-    document.getElementById('hallOfFameAllTimeSec').classList.remove('active');
-}
-
-function hallOfFameYear(){
-    document.getElementById('hallOfFameYearSec').classList.add('active');
-
-    document.getElementById('hallOfFameChoices').classList.remove('active');
-
-    document.getElementById('hallOfFameWeekSec').classList.remove('active');
-    document.getElementById('hallOfFameMonthSec').classList.remove('active');
-    document.getElementById('hallOfFameDaySec').classList.remove('active');
-    document.getElementById('hallOfFameAllTimeSec').classList.remove('active');
-}
-
-function hallOfFameAllTime(){
-    document.getElementById('hallOfFameAllTimeSec').classList.add('active');
-
-    document.getElementById('hallOfFameChoices').classList.remove('active');
-
-    document.getElementById('hallOfFameWeekSec').classList.remove('active');
-    document.getElementById('hallOfFameMonthSec').classList.remove('active');
-    document.getElementById('hallOfFameYearSec').classList.remove('active');
-    document.getElementById('hallOfFameDaySec').classList.remove('active');
 }
 
 function hallOfFameClose(){
     document.getElementById('hallOfFameChoices').classList.remove('active');
 }
 
-//
 
-function competition(){
-    document.getElementById('competitionBtn').classList.add('active');
+function cat(){
+    document.getElementById('catChoices').classList.add('active');
 }
 
+function tbbExtra(){
+    document.getElementById('tbbExtraSide').classList.add('active');
 
+    document.getElementById('fiberExtraSide').classList.remove('active');
+    document.getElementById('densExtraSide').classList.remove('active');
+}
 
-// 
+function fiberExtra(){
+    document.getElementById('fiberExtraSide').classList.add('active');
 
-function history(){
-    document.getElementById('historyBtn').classList.add('active');
+    document.getElementById('tbbExtraSide').classList.remove('active');
+    document.getElementById('densExtraSide').classList.remove('active');
+}
+
+function densExtra(){
+    document.getElementById('densExtraSide').classList.add('active');
+
+    document.getElementById('fiberExtraSide').classList.remove('active');
+    document.getElementById('tbbExtraSide').classList.remove('active');
+}
+
+function catClose(){
+    document.getElementById('catChoices').classList.remove('active');
+    document.getElementById('fiberExtraSide').classList.remove('active');
+    document.getElementById('tbbExtraSide').classList.remove('active');
+    document.getElementById('densExtraSide').classList.remove('active');
 }
