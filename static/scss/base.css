@@ -244,7 +244,7 @@
     background: gray;
   }
   .actions .sidebar .heading {
-    font-size: 26px;
+    font-size: 24px;
     color: #183b56;
     font-weight: 500;
     padding-left: 400px;
@@ -292,26 +292,6 @@
   .actions button:first-child {
     margin-left: 0;
   }
-  .main-text {
-    font-size: 30px;
-    color: #183b56;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    padding-inline: 10px;
-    background: rgba(255, 255, 255, 0.8);
-    margin-bottom: 0;
-    border-top: 1px solid rgba(100, 100, 100, 0.15);
-  }
-  .main-text-p {
-    background: rgba(255, 255, 255, 0.8);
-    font-size: 19px;
-    color: #183b56;
-    text-align: center;
-    margin-top: 0;
-    padding-bottom: 20px;
-  }
   .results-section {
     text-align: center;
     padding-top: 20px;
@@ -325,7 +305,7 @@
   }
   .results-section .heading {
     color: #183b56;
-    font-size: 32px;
+    font-size: 30px;
   }
   .results-section h2 {
     font-size: 19px;
@@ -351,9 +331,9 @@
   }
   .results-section .results {
     margin-top: 27px;
+    background: rgba(255, 255, 255, 0.4);
   }
   .results-section .results .user {
-    background: white;
     width: 450px;
     max-width: 450px;
     padding: 10px;
@@ -361,12 +341,10 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    border: 1px solid rgb(230, 230, 230);
     margin-block: 12px;
     display: flex;
     align-items: center;
     height: 105px;
-    border-radius: 4px;
   }
   .results-section .results .user:first-child {
     margin-top: 0;
