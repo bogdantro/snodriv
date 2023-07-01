@@ -14,3 +14,9 @@ $txt: #183b56;
     width: 100%;
     border-top: 1px solid rgba(100,100,100,0.15);
 }
+
+@media only screen and (min-device-width: 1140px) {
+#footer{
+    display: none;
+}
+}
