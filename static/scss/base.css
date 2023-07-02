@@ -69,7 +69,8 @@
   border-top: 1px solid rgba(100, 100, 100, 0.15);
 }
 .actions .sidebar.active {
-  height: 100%;
+  height: -moz-max-content;
+  height: max-content;
   left: 0;
   opacity: 1;
   pointer-events: visible;
@@ -210,6 +211,7 @@
     pointer-events: none;
     transition: 0.2s;
     overflow-y: hidden !important;
+    overflow-x: hidden !important;
   }
   .actions .sidebar .sub-sidebar {
     display: none;
@@ -268,7 +270,8 @@
     border-top: 1px solid rgba(100, 100, 100, 0.25);
   }
   .actions .sidebar.active {
-    height: 100%;
+    height: -moz-max-content;
+    height: max-content;
     left: 0;
     opacity: 1;
     pointer-events: visible;
@@ -332,10 +335,10 @@
     margin-top: 20px;
   }
   .results-section .results .user {
-    width: 440px;
-    max-width: 440px;
-    padding: 6px 3px;
-    padding-left: 1px;
+    width: 550px;
+    max-width: 550px;
+    padding: 6px 6px;
+    padding-left: 6px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
