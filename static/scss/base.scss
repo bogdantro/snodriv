@@ -338,10 +338,10 @@ $place-number-sizes: (1: 26px, 2: 222px, 3: 139px);
         }
        }
        .results{
-        margin-top: 20px;
+        margin-top: -5px;
         .user{
-            width: 550px;
-            max-width: 550px;
+            width: 555px;
+            max-width: 555px;
             padding: 6px 6px;
             padding-left: 6px;
             position: relative;
@@ -350,7 +350,7 @@ $place-number-sizes: (1: 26px, 2: 222px, 3: 139px);
             margin-block: 0px;
             display: flex;
             align-items: center;
-            height: 83px;
+            height: 80px;
             &:first-child{
                 margin-top: 0;
             }
