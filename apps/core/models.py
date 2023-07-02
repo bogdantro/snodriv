@@ -33,7 +33,7 @@ class Profile(models.Model):
     Densification_year_points = models.IntegerField(default=0)
     Densification_alltime_points = models.IntegerField(default=0)
 
-    image = models.ImageField(blank=True, default='static/images/default.png', upload_to='static/images/other/user_images/')
+    image = models.ImageField(blank=True, null=True, default='static/images/default.png', upload_to='static/images/other/user_images/')
     day_points = models.IntegerField(default=0)
     previous_day_points = models.IntegerField(default=0)
     week_points = models.IntegerField(default=0)
