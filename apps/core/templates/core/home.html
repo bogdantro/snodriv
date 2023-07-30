@@ -7,77 +7,59 @@
 <script src="{% static '/js/home.js' %}"></script>
 
 
-<div class="page">
-
-  <div class="actions">
-
-    <button onclick="hallOfFame()" id="hallOfFameBtn">Hall of Fame</button>
-    <div class="sidebar" id="hallOfFameChoices">
-      <h1 class="heading">Hall of Fame</h1> <i onclick="hallOfFameClose()" class="fa-solid fa-xmark"></i>
-      <a onclick="window.location.href='/'">Dag</a>
-      <a onclick="window.location.href='/hall-of-fame-uke/'">Uke</a>
-      <a onclick="window.location.href='/hall-of-fame-maaned/'">Måned</a>
-      <a onclick="window.location.href='/hall-of-fame-aar/'">År</a>
-      <a onclick="window.location.href='/hall-of-fame-alltime/'">All time</a>
+<div class="cover">
+    <div class="content">
+        <img class="cover-image" src="{% static '/images/covers/cover.png' %}" alt="quote-marks">
+        <div class="text">
+            <h1 class="cover-h1">Enklere og tryggere bilsalg </h1>
+        </div>
+        <div class="cover-actions">
+            <button>Kjøp bil</button>
+            <button class="secondary">Selg bil</button>
+         </div>   
     </div>
-
-    <button onclick="window.location.href='/competition/'">Competition</button>
-
-    <button onclick="cat()" id="historyBtn">Categories</button>
-    <div class="sidebar" id="catChoices">
-      <h1 class="heading">Categories</h1> <i onclick="catClose()" class="fa-solid fa-xmark"></i>
-      <a onclick="tbbExtra()">TBB</a>
-      <div class="sub-sidebar" id="tbbExtraSide">
-        <a onclick="window.location.href='/cat-tbb-day/'">Dag</a>
-        <a onclick="window.location.href='/cat-tbb-week/'">Uke</a>
-        <a onclick="window.location.href='/cat-tbb-month/'">Måned</a>
-        <a onclick="window.location.href='/cat-tbb-year/'">År</a>
-        <a onclick="window.location.href='/cat-tbb-alltime/'">All time</a>
-        </div>
-      <a onclick="fiberExtra()">Fiber</a>
-      <div class="sub-sidebar" id="fiberExtraSide">
-        <a onclick="window.location.href='/cat-fiber-day/'">Dag</a>
-        <a onclick="window.location.href='/cat-fiber-week/'">Uke</a>
-        <a onclick="window.location.href='/cat-fiber-month/'">Måned</a>
-        <a onclick="window.location.href='/cat-fiber-year/'">År</a>
-        <a onclick="window.location.href='/cat-fiber-alltime/'">All time</a>
-        </div>
-      <a onclick="densExtra()">Densification</a>
-      <div class="sub-sidebar" id="densExtraSide">
-        <a onclick="window.location.href='/cat-dens-day/'">Dag</a>
-        <a onclick="window.location.href='/cat-dens-week/'">Uke</a>
-        <a onclick="window.location.href='/cat-dens-month/'">Måned</a>
-        <a onclick="window.location.href='/cat-dens-year/'">År</a>
-        <a onclick="window.location.href='/cat-dens-alltime/'">All time</a>
-        </div>
-    </div>
-
-    <button onclick="window.location.href='/min-bruker/'">Min bruker</button>
-    
-  </div>
-
- 
-  <div class="results-section" id="hallOfFameDaySec">
-    <h1 class="heading">Hall of Fame</h1>
-    <h2>Dag</h2>
-    <div class="results">
-      {% for profile in profiles %}
-      <div class="user">
-        <div class="resultPlace">
-{{ forloop.counter }}{% if forloop.counter == 1 %}st{% elif forloop.counter == 2 %}nd{% elif forloop.counter == 3 %}rd{% else %}th{% endif %} 
-        </div>
-        <div class="img"><img src="{{profile.image.url}}" alt=""></div>
-        <div class="name">{{profile.user.get_full_name}}</div>
-        <div class="points">{{profile.day_points}}</div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-
-
 </div>
 
+<div class="sell-with-us">
+    <div class="content">
+        <div class="text">
+            <h1>Så enkelt kan du selge med oss</h1>
+        </div>
+        <div class="video"></div>
+    </div>
+</div>
+
+<div class="proccess">
+    <div class="content">
+        <div class="text">
+            <h1>Fire enkle steg</h1>
+        </div>
+    </div>
+</div>
+
+<div class="services">
+    <div class="content">
+        <div class="text">
+            <h1>Hva gjør vi for deg?</h1>
+        </div>
+    </div>
+</div>
+
+<div class="price">
+    <div class="content">
+        <div class="text">
+            <h1>Hva koster det?</h1>
+        </div>
+    </div>
+</div>
+
+<div class="location">
+    <div class="content">
+        <div class="text">
+            <h1>Du finner oss her</h1>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
  

@@ -1,20 +1,149 @@
 $black: #1F1F1F;
 $white: rgb(246,246,246);
-$primBtn: #08A1CF;
+$primBtn: #f0a432;
 $txt: #183b56;
 
-#footer{
-    margin-top: 20px;
-    position: relative;
-    text-align: center;
-    padding: 10px;
-    font-size: 15px;
-    color: #1f1f1fa8;
-    background: white;
+#footerMob{
+    margin-top: 0;
     width: 100%;
-    border-top: 1px solid rgba(100,100,100,0.15);
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 18px;
+    position: relative;
+    background: rgb(253,253,253);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-inline: 20px;
+    .links{
+        p{
+            margin-bottom: 0;
+        }
+        .business-heading{
+            color: $txt;
+            font-size: 19px;
+            margin-bottom: 3px;
+            font-weight: 500;
+        }
+        .info-heading{
+            color: $txt;
+            font-size: 19px;
+            margin-bottom: 3px;
+            font-weight: 500;
+        }
+        .business-text{
+            margin-top: 0;
+            color: $txt;
+            font-size: 15px;
+        }
+        button{
+            background: $primBtn;
+            border: 1px solid transparent;
+            width: auto;
+            height: auto;
+            padding: 7px 26px;
+            margin-top: 14px;
+            outline: none;
+            border-radius: 3px;
+            color: white;
+            font-size: 15px;
+        }
+        a{
+            display: block;
+            color: $txt;
+            font-size: 16px;
+            width: max-content;
+            padding-right: 5px;
+            margin-block: 8px;
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0.85;
+        .logo{
+            img{
+                width: 92px;
+                height: auto;
+                transition: .3s;
+                cursor: pointer;
+            }
+        }
+        .social-icons{
+            i{
+                color: $txt;
+                font-size: 21px;
+                margin-inline: 2px;
+                padding: 8px;
+            }
+        }
+    }
+    // newsletter
+    #newsletter{
+        margin-bottom: 15px;
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        padding: 32px 30px;
+        background-color: white;
+        text-align: center;
+        h1{
+            transform: translateY(-10px);
+            color: #183B56;
+            text-shadow: 1px 0 #183B56;
+            letter-spacing:1px;    
+            font-size: 26.5px;
+            font-weight: 800;
+        }
+        .content{
+             // input
+            input{
+                border-radius: 0;
+                padding: 5px;
+                border: none;
+                border-bottom: 2px solid rgba(211, 211, 211, 0.611);
+                outline: none;
+                color: #183B56;
+                font-size: 13px;
+                width: 82%;
+                max-width: 500px;
+                font-weight: 600;
+                height: 45px;
+                cursor: pointer;
+                &:hover{
+                    filter: brightness(95%);
+                }
+            }
+            // button
+            button{
+                border: none;
+                outline: none;
+                background: transparent;
+                i{
+                    transform: translateX(-20px) translateY(2px);
+                    z-index: 1000;
+                    font-size: 22px;
+                    color: #183B56;
+                    cursor: pointer;
+                    transition: .2s;
+                    &:hover{
+                        filter: brightness(95%);
+                    }
+                    &:focus{
+                        cursor: unset;
+                        filter: brightness(100%);
+                    }
+                }
+            }
+        }
+        #footerNewsLetterAlert{
+            margin-top: 15px;
+        }
+    }
 }
-
 @media only screen and (min-device-width: 1140px) {
 #footer{
     display: none;

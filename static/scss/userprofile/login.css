@@ -1,6 +1,8 @@
 .login {
-  padding-top: 25px;
+  padding-top: 105px;
   min-height: 80vh;
+  padding-inline: 20px;
+  padding-bottom: 30px;
 }
 .login #loginForm {
   width: auto;
@@ -14,19 +16,92 @@
   font-weight: 600;
   font-size: 33px;
 }
-.login #loginForm .inputs-labels {
+.login #loginForm .form {
+  background: white;
+  border-radius: 12px;
+  padding-inline: 14px;
+  padding-block: 34px;
+  position: relative;
+  margin-top: 20px;
+}
+.login #loginForm .form .vipps {
+  background: #FF5B24;
+  width: 100%;
+  color: white;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+.login #loginForm .form .or-vipps {
+  margin-top: 27px;
+  margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.7;
+  width: 100%;
+}
+.login #loginForm .form .or-vipps span {
+  width: 40%;
+  display: block;
+  position: relative;
+  background: rgba(160, 160, 160, 0.692);
+  height: 1px;
+}
+.login #loginForm .form .or-vipps p {
+  margin-bottom: 0;
+  color: #1F1F1F;
+  font-size: 14px;
   padding-inline: 20px;
+  font-weight: 500;
+  min-width: 120px !important;
+}
+.login #loginForm .inputs-labels {
   max-width: 400px;
-  padding-block: 28px;
 }
 .login #loginForm .inputs-labels label {
   color: #183b56;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
+}
+.login #loginForm .inputs-labels .phone-input {
+  display: flex;
+  align-items: center;
+}
+.login #loginForm .inputs-labels .phone-input input {
+  width: 85%;
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.login #loginForm .inputs-labels .phone-input input:focus, .login #loginForm .inputs-labels .phone-input input:active {
+  border: 1px solid #f0a432;
+  cursor: text;
+  background: rgb(255, 255, 255);
+}
+.login #loginForm .inputs-labels .phone-input .code {
+  width: 16%;
+  background: #f8f7f2;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  border: 1px solid lightgray;
+  border-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+}
+.login #loginForm .inputs-labels .phone-input .code p {
+  color: #183b56;
+  font-weight: 500;
+  padding: 16px;
+  font-size: 15px;
+  margin-bottom: 0 !important;
 }
 .login #loginForm .inputs-labels input {
   width: 100%;
-  height: 53px;
+  height: 48px;
   border: 1px solid lightgray;
   outline: none;
   padding: 8px;
@@ -34,10 +109,10 @@
   font-size: 16px;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.7);
-  border-radius: 4px;
+  border-radius: 7px;
 }
 .login #loginForm .inputs-labels input:focus, .login #loginForm .inputs-labels input:active {
-  border: 2px solid #08A1CF;
+  border: 2px solid #f0a432;
   cursor: text;
   background: rgb(255, 255, 255);
 }
@@ -50,15 +125,15 @@
   opacity: 0.6;
 }
 .login #loginForm .form-actions {
-  padding-inline: 20px;
   max-width: 400px;
+  margin-top: 25px;
 }
 .login #loginForm .form-actions button {
   width: 100%;
-  height: 57px;
-  background: #08A1CF;
+  height: 40px;
+  background: #f0a432;
   color: rgb(246, 246, 246);
-  border-radius: 4px;
+  border-radius: 7px;
   font-size: 16px;
   padding: 3px;
   cursor: pointer;
@@ -112,7 +187,7 @@
     border-radius: 4px;
   }
   .login #loginForm .inputs-labels input:focus, .login #loginForm .inputs-labels input:active {
-    border: 2px solid #08A1CF;
+    border: 2px solid #f0a432;
     cursor: text;
     background: rgb(255, 255, 255);
   }
@@ -134,7 +209,7 @@
   .login #loginForm .form-actions button {
     width: 100%;
     height: 57px;
-    background: #08A1CF;
+    background: #f0a432;
     color: rgb(246, 246, 246);
     border-radius: 4px;
     font-size: 16px;
